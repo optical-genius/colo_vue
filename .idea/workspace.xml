@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="88266db3-26d3-490c-b241-a2c24350995c" name="Default Changelist" comment="">
+      <change afterPath="Y:/.editorconfig" afterDir="false" />
+      <change afterPath="Y:/.gitignore" afterDir="false" />
+      <change afterPath="Y:/.htaccess" afterDir="false" />
+      <change afterPath="Y:/.idea/Y.iml" afterDir="false" />
+      <change afterPath="Y:/.idea/deployment.xml" afterDir="false" />
+      <change afterPath="Y:/.idea/misc.xml" afterDir="false" />
+      <change afterPath="Y:/.idea/modules.xml" afterDir="false" />
+      <change afterPath="Y:/.idea/php.xml" afterDir="false" />
+      <change afterPath="Y:/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="Y:/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="Y:/README.md" afterDir="false" />
+      <change afterPath="Y:/app/Console/Kernel.php" afterDir="false" />
+      <change afterPath="Y:/app/Exceptions/Handler.php" afterDir="false" />
+      <change afterPath="Y:/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change afterPath="Y:/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change afterPath="Y:/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change afterPath="Y:/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change afterPath="Y:/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change afterPath="Y:/app/Http/Controllers/IpController.php" afterDir="false" />
+      <change afterPath="Y:/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change afterPath="Y:/app/Http/Kernel.php" afterDir="false" />
+      <change afterPath="Y:/app/Http/Middleware/CheckForMaintenanceMode.php" afterDir="false" />
+      <change afterPath="Y:/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
+      <change afterPath="Y:/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change afterPath="Y:/app/Http/Middleware/TrimStrings.php" afterDir="false" />
+      <change afterPath="Y:/app/Http/Middleware/TrustProxies.php" afterDir="false" />
+      <change afterPath="Y:/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change afterPath="Y:/app/Ip.php" afterDir="false" />
+      <change afterPath="Y:/app/Post.php" afterDir="false" />
+      <change afterPath="Y:/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change afterPath="Y:/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change afterPath="Y:/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
+      <change afterPath="Y:/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change afterPath="Y:/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change afterPath="Y:/app/User.php" afterDir="false" />
+      <change afterPath="Y:/artisan" afterDir="false" />
+      <change afterPath="Y:/bootstrap/app.php" afterDir="false" />
+      <change afterPath="Y:/bootstrap/cache/.gitignore" afterDir="false" />
+      <change afterPath="Y:/composer.json" afterDir="false" />
+      <change afterPath="Y:/composer.lock" afterDir="false" />
+      <change afterPath="Y:/composer.phar" afterDir="false" />
+      <change afterPath="Y:/config/app.php" afterDir="false" />
+      <change afterPath="Y:/config/auth.php" afterDir="false" />
+      <change afterPath="Y:/config/broadcasting.php" afterDir="false" />
+      <change afterPath="Y:/config/cache.php" afterDir="false" />
+      <change afterPath="Y:/config/database.php" afterDir="false" />
+      <change afterPath="Y:/config/filesystems.php" afterDir="false" />
+      <change afterPath="Y:/config/hashing.php" afterDir="false" />
+      <change afterPath="Y:/config/logging.php" afterDir="false" />
+      <change afterPath="Y:/config/mail.php" afterDir="false" />
+      <change afterPath="Y:/config/neo4j.php" afterDir="false" />
+      <change afterPath="Y:/config/queue.php" afterDir="false" />
+      <change afterPath="Y:/config/services.php" afterDir="false" />
+      <change afterPath="Y:/config/session.php" afterDir="false" />
+      <change afterPath="Y:/config/view.php" afterDir="false" />
+      <change afterPath="Y:/database/.gitignore" afterDir="false" />
+      <change afterPath="Y:/database/factories/PostFactory.php" afterDir="false" />
+      <change afterPath="Y:/database/factories/UserFactory.php" afterDir="false" />
+      <change afterPath="Y:/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change afterPath="Y:/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change afterPath="Y:/database/migrations/2018_08_23_144135_create_posts_table.php" afterDir="false" />
+      <change afterPath="Y:/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change afterPath="Y:/package-lock.json" afterDir="false" />
+      <change afterPath="Y:/package.json" afterDir="false" />
+      <change afterPath="Y:/phpunit.xml" afterDir="false" />
+      <change afterPath="Y:/public/.htaccess" afterDir="false" />
+      <change afterPath="Y:/public/css/app.css" afterDir="false" />
+      <change afterPath="Y:/public/favicon.ico" afterDir="false" />
+      <change afterPath="Y:/public/images/demo.gif" afterDir="false" />
+      <change afterPath="Y:/public/index.php" afterDir="false" />
+      <change afterPath="Y:/public/js/app.js" afterDir="false" />
+      <change afterPath="Y:/public/mix-manifest.json" afterDir="false" />
+      <change afterPath="Y:/public/robots.txt" afterDir="false" />
+      <change afterPath="Y:/resources/js/app.js" afterDir="false" />
+      <change afterPath="Y:/resources/js/bootstrap.js" afterDir="false" />
+      <change afterPath="Y:/resources/js/components/CreatePost.vue" afterDir="false" />
+      <change afterPath="Y:/resources/js/components/ExampleComponent.vue" afterDir="false" />
+      <change afterPath="Y:/resources/js/components/Posts.vue" afterDir="false" />
+      <change afterPath="Y:/resources/js/components/ip/Ip.vue" afterDir="false" />
+      <change afterPath="Y:/resources/js/store/actions.js" afterDir="false" />
+      <change afterPath="Y:/resources/js/store/getters.js" afterDir="false" />
+      <change afterPath="Y:/resources/js/store/index.js" afterDir="false" />
+      <change afterPath="Y:/resources/js/store/mutations.js" afterDir="false" />
+      <change afterPath="Y:/resources/js/store/state.js" afterDir="false" />
+      <change afterPath="Y:/resources/lang/en/auth.php" afterDir="false" />
+      <change afterPath="Y:/resources/lang/en/pagination.php" afterDir="false" />
+      <change afterPath="Y:/resources/lang/en/passwords.php" afterDir="false" />
+      <change afterPath="Y:/resources/lang/en/validation.php" afterDir="false" />
+      <change afterPath="Y:/resources/sass/_variables.scss" afterDir="false" />
+      <change afterPath="Y:/resources/sass/app.scss" afterDir="false" />
+      <change afterPath="Y:/resources/views/ips.blade.php" afterDir="false" />
+      <change afterPath="Y:/resources/views/posts.blade.php" afterDir="false" />
+      <change afterPath="Y:/resources/views/welcome.blade.php" afterDir="false" />
+      <change afterPath="Y:/routes/api.php" afterDir="false" />
+      <change afterPath="Y:/routes/channels.php" afterDir="false" />
+      <change afterPath="Y:/routes/console.php" afterDir="false" />
+      <change afterPath="Y:/routes/web.php" afterDir="false" />
+      <change afterPath="Y:/server.php" afterDir="false" />
+      <change afterPath="Y:/storage/app/.gitignore" afterDir="false" />
+      <change afterPath="Y:/storage/app/public/.gitignore" afterDir="false" />
+      <change afterPath="Y:/storage/debugbar/.gitignore" afterDir="false" />
+      <change afterPath="Y:/storage/framework/.gitignore" afterDir="false" />
+      <change afterPath="Y:/storage/framework/cache/.gitignore" afterDir="false" />
+      <change afterPath="Y:/storage/framework/sessions/.gitignore" afterDir="false" />
+      <change afterPath="Y:/storage/framework/testing/.gitignore" afterDir="false" />
+      <change afterPath="Y:/storage/framework/views/.gitignore" afterDir="false" />
+      <change afterPath="Y:/storage/logs/.gitignore" afterDir="false" />
+      <change afterPath="Y:/tests/CreatesApplication.php" afterDir="false" />
+      <change afterPath="Y:/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change afterPath="Y:/tests/TestCase.php" afterDir="false" />
+      <change afterPath="Y:/tests/Unit/ExampleTest.php" afterDir="false" />
+      <change afterPath="Y:/tests/composer_lock.lock" afterDir="false" />
+      <change afterPath="Y:/webpack.mix.js" afterDir="false" />
+      <change afterPath="Y:/yarn.lock" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>Y:/composer.json</pharConfigPath>
+    <execution>
+      <executable />
+    </execution>
+  </component>
+  <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Stanislav Kazakov" />
+      </list>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="Y:/" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="Y:/vendor/paragonie/random_compat" />
+      <path value="Y:/vendor/erusev/parsedown" />
+      <path value="Y:/vendor/swiftmailer/swiftmailer" />
+      <path value="Y:/vendor/sebastian/resource-operations" />
+      <path value="Y:/vendor/sebastian/global-state" />
+      <path value="Y:/vendor/league/flysystem" />
+      <path value="Y:/vendor/sebastian/recursion-context" />
+      <path value="Y:/vendor/sebastian/exporter" />
+      <path value="Y:/vendor/sebastian/diff" />
+      <path value="Y:/vendor/sebastian/environment" />
+      <path value="Y:/vendor/sebastian/object-enumerator" />
+      <path value="Y:/vendor/maximebf/debugbar" />
+      <path value="Y:/vendor/sebastian/object-reflector" />
+      <path value="Y:/vendor/sebastian/comparator" />
+      <path value="Y:/vendor/sebastian/code-unit-reverse-lookup" />
+      <path value="Y:/vendor/sebastian/version" />
+      <path value="Y:/vendor/psy/psysh" />
+      <path value="Y:/vendor/monolog/monolog" />
+      <path value="Y:/vendor/webmozart/assert" />
+      <path value="Y:/vendor/ramsey/uuid" />
+      <path value="Y:/vendor/psr/container" />
+      <path value="Y:/vendor/psr/simple-cache" />
+      <path value="Y:/vendor/phar-io/version" />
+      <path value="Y:/vendor/fzaninotto/faker" />
+      <path value="Y:/vendor/psr/log" />
+      <path value="Y:/vendor/nikic/php-parser" />
+      <path value="Y:/vendor/tijsverkoyen/css-to-inline-styles" />
+      <path value="Y:/vendor/phar-io/manifest" />
+      <path value="Y:/vendor/dragonmantank/cron-expression" />
+      <path value="Y:/vendor/phpunit/php-token-stream" />
+      <path value="Y:/vendor/phpunit/php-timer" />
+      <path value="Y:/vendor/mockery/mockery" />
+      <path value="Y:/vendor/phpunit/php-text-template" />
+      <path value="Y:/vendor/phpunit/php-code-coverage" />
+      <path value="Y:/vendor/phpunit/php-file-iterator" />
+      <path value="Y:/vendor/phpunit/phpunit" />
+      <path value="Y:/vendor/laravel/tinker" />
+      <path value="Y:/vendor/laravel/framework" />
+      <path value="Y:/vendor/phpspec/prophecy" />
+      <path value="Y:/vendor/nesbot/carbon" />
+      <path value="Y:/vendor/doctrine/instantiator" />
+      <path value="Y:/vendor/doctrine/inflector" />
+      <path value="Y:/vendor/doctrine/lexer" />
+      <path value="Y:/vendor/jakub-onderka/php-console-color" />
+      <path value="Y:/vendor/jakub-onderka/php-console-highlighter" />
+      <path value="Y:/vendor/theseer/tokenizer" />
+      <path value="Y:/vendor/myclabs/deep-copy" />
+      <path value="Y:/vendor/vlucas/phpdotenv" />
+      <path value="Y:/vendor/symfony/debug" />
+      <path value="Y:/vendor/symfony/translation" />
+      <path value="Y:/vendor/hamcrest/hamcrest-php" />
+      <path value="Y:/vendor/symfony/polyfill-php72" />
+      <path value="Y:/vendor/symfony/finder" />
+      <path value="Y:/vendor/dnoegel/php-xdg-base-dir" />
+      <path value="Y:/vendor/symfony/console" />
+      <path value="Y:/vendor/symfony/http-kernel" />
+      <path value="Y:/vendor/symfony/event-dispatcher" />
+      <path value="Y:/vendor/symfony/css-selector" />
+      <path value="Y:/vendor/symfony/polyfill-ctype" />
+      <path value="Y:/vendor/symfony/http-foundation" />
+      <path value="Y:/vendor/symfony/routing" />
+      <path value="Y:/vendor/nunomaduro/collision" />
+      <path value="Y:/vendor/symfony/process" />
+      <path value="Y:/vendor/symfony/var-dumper" />
+      <path value="Y:/vendor/symfony/polyfill-mbstring" />
+      <path value="Y:/vendor/filp/whoops" />
+      <path value="Y:/vendor/egulias/email-validator" />
+      <path value="Y:/vendor/phpdocumentor/reflection-docblock" />
+      <path value="Y:/vendor/composer" />
+      <path value="Y:/vendor/phpdocumentor/type-resolver" />
+      <path value="Y:/vendor/phpdocumentor/reflection-common" />
+      <path value="Y:/vendor/barryvdh/laravel-debugbar" />
+      <path value="Y:/vendor/fideloper/proxy" />
+      <path value="Y:/vendor/vinelab/neoeloquent" />
+      <path value="Y:/vendor/tsf/laravel-neo4j-php-client" />
+      <path value="Y:/vendor/phpunit/phpunit_compare" />
+      <path value="Y:/vendor/psr/http-message" />
+      <path value="Y:/vendor/opis/closure" />
+      <path value="Y:/vendor/symfony/translation-contracts" />
+      <path value="Y:/vendor/symfony/polyfill-php73" />
+      <path value="Y:/vendor/symfony/mime" />
+      <path value="Y:/vendor/symfony/service-contracts" />
+      <path value="Y:/vendor/symfony/event-dispatcher-contracts" />
+      <path value="Y:/vendor/symfony/polyfill-iconv" />
+      <path value="Y:/vendor/symfony/polyfill-intl-idn" />
+      <path value="Y:/vendor/kylekatarnls/update-helper" />
+      <path value="Y:/vendor/guzzlehttp/guzzle" />
+      <path value="Y:/vendor/php-http/guzzle6-adapter" />
+      <path value="Y:/vendor/guzzlehttp/psr7" />
+      <path value="Y:/vendor/guzzlehttp/promises" />
+      <path value="Y:/vendor/php-http/promise" />
+      <path value="Y:/vendor/php-http/httplug" />
+      <path value="Y:/vendor/ralouphie/getallheaders" />
+      <path value="Y:/vendor/symfony/options-resolver" />
+      <path value="Y:/vendor/graphaware/neo4j-bolt" />
+      <path value="Y:/vendor/graphaware/neo4j-php-client" />
+      <path value="Y:/vendor/graphaware/neo4j-common" />
+      <path value="Y:/vendor/myclabs/php-enum" />
+      <path value="Y:/vendor/php-http/discovery" />
+      <path value="Y:/vendor/php-http/message" />
+      <path value="Y:/vendor/php-http/client-common" />
+      <path value="Y:/vendor/php-http/message-factory" />
+      <path value="Y:/vendor/clue/stream-filter" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1TpHAp0I8L6To5eoJl9ukXlQDA8" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="last_opened_file_path" value="Y:/resources/views" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="Y:\resources\views" />
+      <recent name="Y:\resources\js" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner scope="XML" />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="88266db3-26d3-490c-b241-a2c24350995c" name="Default Changelist" comment="" />
+      <created>1574149975648</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1574149975648</updated>
+      <workItem from="1574149977871" duration="23212000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="(add) new project" />
+    <option name="LAST_COMMIT_MESSAGE" value="(add) new project" />
+  </component>
+</project>
