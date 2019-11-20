@@ -15,3 +15,7 @@ Route::get('/', 'PostController@index');
 
 Route::get('ip', 'IpController@index');
 
+Route::get('ip-clusterize', 'IpController@clusterize');
+
+Route::get('ip-clusterize-table', 'IpController@clusterizeTable');
+

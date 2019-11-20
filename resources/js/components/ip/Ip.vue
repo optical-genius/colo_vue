@@ -12,7 +12,7 @@
             </tr>
             </thead>
             <tbody>
-            <tr v-for="ip in ips['vueRecordArray']">
+            <tr v-for="(ip, index) in ips['vueRecordArray']" :index="index">
                 <td>
                     <input type="text" :value="ip['0'].ip_name"><br>
                     id: {{ip['0'].id}}
