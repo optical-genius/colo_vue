@@ -53446,7 +53446,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
     data: function data() {
         return {
-
             tableConfig: [{ prop: '_index', name: '#', width: 80 }, {
                 prop: 'ip_name',
                 name: 'IP',

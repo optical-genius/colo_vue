@@ -28,7 +28,6 @@
         },
         data(){
             return{
-
             tableConfig: [
                 { prop: '_index', name: '#', width: 80 },
                 {
