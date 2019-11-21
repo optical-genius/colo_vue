@@ -77,6 +77,8 @@
     <div class="container">
         <div class="row">
             <div class="col-md-12">
+                {{'Память: '. $memorylim .' мб.'}}<br>
+                {{'Время выполнения скрипта: '.round(microtime(true) - $start, 4).' сек.'}}
 
                 <vuevirtualtable :records='@json($vueRecordArray)'></vuevirtualtable>
 

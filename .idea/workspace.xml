@@ -77,9 +77,11 @@
       <change beforePath="Y:/public/robots.txt" beforeDir="false" afterPath="Y:/public/robots.txt" afterDir="false" />
       <change beforePath="Y:/resources/js/app.js" beforeDir="false" afterPath="Y:/resources/js/app.js" afterDir="false" />
       <change beforePath="Y:/resources/js/bootstrap.js" beforeDir="false" afterPath="Y:/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="Y:/resources/js/components/Clusterize.vue" beforeDir="false" afterPath="Y:/resources/js/components/Clusterize.vue" afterDir="false" />
       <change beforePath="Y:/resources/js/components/CreatePost.vue" beforeDir="false" afterPath="Y:/resources/js/components/CreatePost.vue" afterDir="false" />
       <change beforePath="Y:/resources/js/components/ExampleComponent.vue" beforeDir="false" afterPath="Y:/resources/js/components/ExampleComponent.vue" afterDir="false" />
       <change beforePath="Y:/resources/js/components/Posts.vue" beforeDir="false" afterPath="Y:/resources/js/components/Posts.vue" afterDir="false" />
+      <change beforePath="Y:/resources/js/components/VirtualTable.vue" beforeDir="false" afterPath="Y:/resources/js/components/VirtualTable.vue" afterDir="false" />
       <change beforePath="Y:/resources/js/components/ip/Ip.vue" beforeDir="false" afterPath="Y:/resources/js/components/ip/Ip.vue" afterDir="false" />
       <change beforePath="Y:/resources/js/store/actions.js" beforeDir="false" afterPath="Y:/resources/js/store/actions.js" afterDir="false" />
       <change beforePath="Y:/resources/js/store/getters.js" beforeDir="false" afterPath="Y:/resources/js/store/getters.js" afterDir="false" />
@@ -92,6 +94,8 @@
       <change beforePath="Y:/resources/lang/en/validation.php" beforeDir="false" afterPath="Y:/resources/lang/en/validation.php" afterDir="false" />
       <change beforePath="Y:/resources/sass/_variables.scss" beforeDir="false" afterPath="Y:/resources/sass/_variables.scss" afterDir="false" />
       <change beforePath="Y:/resources/sass/app.scss" beforeDir="false" afterPath="Y:/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="Y:/resources/views/ips-clusterize-table.blade.php" beforeDir="false" afterPath="Y:/resources/views/ips-clusterize-table.blade.php" afterDir="false" />
+      <change beforePath="Y:/resources/views/ips-clusterize.blade.php" beforeDir="false" afterPath="Y:/resources/views/ips-clusterize.blade.php" afterDir="false" />
       <change beforePath="Y:/resources/views/ips.blade.php" beforeDir="false" afterPath="Y:/resources/views/ips.blade.php" afterDir="false" />
       <change beforePath="Y:/resources/views/posts.blade.php" beforeDir="false" afterPath="Y:/resources/views/posts.blade.php" afterDir="false" />
       <change beforePath="Y:/resources/views/welcome.blade.php" beforeDir="false" afterPath="Y:/resources/views/welcome.blade.php" afterDir="false" />
@@ -249,6 +253,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="Y:/resources/js/components" />
+    <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -285,7 +290,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574149975648</updated>
-      <workItem from="1574149977871" duration="48323000" />
+      <workItem from="1574149977871" duration="68512000" />
     </task>
     <servers />
   </component>
