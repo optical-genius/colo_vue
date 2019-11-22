@@ -105,6 +105,7 @@
       <path value="Y:/vendor/php-http/client-common" />
       <path value="Y:/vendor/php-http/message-factory" />
       <path value="Y:/vendor/clue/stream-filter" />
+      <path value="Y:/vendor/udartsev/laravel-postman-export" />
     </include_path>
   </component>
   <component name="PhpProjectSharedConfiguration" php_language_level="7.1" />

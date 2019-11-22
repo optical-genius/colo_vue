@@ -53435,6 +53435,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -53452,9 +53453,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 searchable: true,
                 sortable: true,
                 summary: 'COUNT'
-            }, { prop: 'host', name: 'host', searchable: true },
-            // { prop: 'city', name: 'City', filterable: true },
-            { prop: '_action', name: 'Action', actionName: 'actionCommon' }],
+            }, { prop: 'host', name: 'HOST', searchable: true }, { prop: 'port', name: 'PORT', filterable: true }, { prop: '_action', name: 'Action', actionName: 'actionCommon' }],
             tableData: this.records,
             tableAttribute: {
                 height: 650,
@@ -53469,15 +53468,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         };
     },
 
-    mounted: function mounted() {
-        console.log(this.that);
-    },
+    mounted: function mounted() {},
     methods: {
         handleSelectionChange: function handleSelectionChange(rows) {
             console.log(rows);
         },
         edit: function edit(index, row) {
-            console.log(index);
+            console.log(row);
         },
         del: function del(index, row) {
             console.log(index);
@@ -58720,8 +58717,8 @@ var render = function() {
     attrs: {
       config: _vm.tableConfig,
       data: _vm.tableData,
-      height: 800,
-      itemHeight: 55,
+      height: 700,
+      itemHeight: 85,
       minWidth: 1000,
       selectable: true,
       enableExport: true,

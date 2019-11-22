@@ -2,14 +2,15 @@
     <vue-virtual-table
         :config="tableConfig"
         :data="tableData"
-        :height="800"
-        :itemHeight="55"
+        :height="700"
+        :itemHeight="85"
         :minWidth="1000"
         :selectable="true"
         :enableExport="true"
         v-on:changeSelection="handleSelectionChange"
         :language="tableAttribute.language"
     >
+
         <template slot-scope="scope" slot="actionCommon">
             <button @click="edit(scope.index, scope.row)">Edit</button>
             <button @click="del(scope.index, scope.row)">Delete</button>
@@ -37,8 +38,8 @@
                     sortable: true,
                     summary: 'COUNT'
                 },
-                { prop: 'host', name: 'host', searchable: true },
-                // { prop: 'city', name: 'City', filterable: true },
+                { prop: 'host', name: 'HOST', searchable: true },
+                { prop: 'port', name: 'PORT', filterable: true },
                 { prop: '_action', name: 'Action', actionName: 'actionCommon' }
             ],
             tableData: this.records,
@@ -55,14 +56,14 @@
             }
         },
         mounted: function() {
-            console.log(this.that);
+
         },
         methods: {
             handleSelectionChange(rows) {
                 console.log(rows)
             },
             edit(index, row) {
-                console.log(index)
+                console.log(row)
             },
             del(index, row) {
                 console.log(index)

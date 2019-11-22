@@ -246,6 +246,7 @@
       <path value="Y:/vendor/php-http/client-common" />
       <path value="Y:/vendor/php-http/message-factory" />
       <path value="Y:/vendor/clue/stream-filter" />
+      <path value="Y:/vendor/udartsev/laravel-postman-export" />
     </include_path>
   </component>
   <component name="ProjectId" id="1TpHAp0I8L6To5eoJl9ukXlQDA8" />
@@ -293,7 +294,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574149975648</updated>
-      <workItem from="1574149977871" duration="74054000" />
+      <workItem from="1574149977871" duration="97896000" />
     </task>
     <servers />
   </component>

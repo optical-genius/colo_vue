@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "037c170ee00c011d4c4ad827727c9b67",
+    "content-hash": "33fc5d27eb414894e2e047222dee8323",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -5699,6 +5699,53 @@
                 "tsf"
             ],
             "time": "2017-06-21T15:50:42+00:00"
+        },
+        {
+            "name": "udartsev/laravel-postman-export",
+            "version": "1.0.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/udartsev/LaravelPostmanExport.git",
+                "reference": "8b81189bab1752363b09a155c9aef11aaf91104f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/udartsev/LaravelPostmanExport/zipball/8b81189bab1752363b09a155c9aef11aaf91104f",
+                "reference": "8b81189bab1752363b09a155c9aef11aaf91104f",
+                "shasum": ""
+            },
+            "require": {
+                "ramsey/uuid": "^3"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "udartsev\\LaravelPostmanExport\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Vladimir Udartsev",
+                    "email": "v.udartsev@gmail.com"
+                },
+                {
+                    "name": "Leo Sjöberg",
+                    "email": "leo@rlstudio.se"
+                }
+            ],
+            "description": "Export your Laravel routes to a Postman collection .json file",
+            "homepage": "https://github.com/udartsev/LaravelPostmanExport",
+            "keywords": [
+                "Postman",
+                "collection",
+                "export",
+                "laravel"
+            ],
+            "time": "2019-08-27T09:08:31+00:00"
         },
         {
             "name": "webmozart/assert",
