@@ -1,53 +1,93 @@
 <template>
-    <RecycleScroller
-        page-mode
+    <DynamicScroller
+        :items="items"
+        :min-item-size="24"
         class="scroller"
-        :items="records"
-        :item-size="20"
-        key-field="id"
-        v-slot="{ item }"
     >
+        <template v-slot="{ item, index, active }">
+            <DynamicScrollerItem
+                :item="item"
+                :active="active"
+                :size-dependencies="[
+          item.host,
+        ]"
+                :data-index="index"
+            >
 
 
+                <table class="table table-striped">
+                    <thead>
+                    <tr>
+                        <th scope="col">IP</th>
+                        <th scope="col">Host</th>
+                        <th scope="col">Delete</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>
+                            <input type="text" :value="item.ip_name"><br>
+                        </td>
+                        <td>
+                            <div v-for="host in item.host" style="margin-bottom: 0px">
+                                <input type="text" :value=" host.host_name ">
+                            </div>
+                        </td>
+                        <td>
+                            <button class="btn btn-danger" @click="deleteIp(ip)"><i style="color:white" class="fa fa-trash"></i></button>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
 
-        <div class="user">
-            <input type="text" :value="item.ip_name"> : {{ item.id }}
-        </div>
-
-    </RecycleScroller>
+            </DynamicScrollerItem>
+        </template>
+    </DynamicScroller>
 </template>
 
 
+
+
+<!--<template>-->
+
+<!--        <RecycleScroller-->
+<!--            page-mode-->
+<!--            class="scrollerrrrr"-->
+<!--            :items="list"-->
+<!--            :item-size="30"-->
+<!--            key-field="id"-->
+<!--            v-slot="{ item }"-->
+<!--        >-->
+<!--            <div class="user">{{ item.ip_name }}</div>-->
+
+<!--        </RecycleScroller>-->
+
+<!--</template>-->
+
 <script>
     export default {
+        name: "App",
         props: {
             records: this.records,
         },
-    }
+        data() {
+            return {
+                items: this.records,
+            };
+        },
+    };
 </script>
 
-<style scoped>
-    .vue-recycle-scroller {
-        position: relative
-    }
-
-    .vue-recycle-scroller.direction-vertical:not(.page-mode) {
-        overflow-y: auto
-    }
-
-    .vue-recycle-scroller.direction-horizontal:not(.page-mode) {
-        overflow-x: auto
-    }
-
-
-    .scroller {
+<style>
+    .scrollerrrrr {
         height: 100%;
     }
 
     .user {
-        height: 20px;
+        height: 32%;
         padding: 0 12px;
         display: flex;
         align-items: center;
+        background-color: #c0c0c0;
     }
 </style>

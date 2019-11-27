@@ -78,6 +78,8 @@
         <div class="row">
             <div class="col-md-12">
 {{--                <ips></ips>--}}
+                {{'Память: '. $memorylim .' мб.'}}<br>
+                {{'Время выполнения скрипта: '.round(microtime(true) - $start, 4).' сек.'}}
                 <recyclescroller :records='@json($vueRecordArray)'></recyclescroller>
             </div>
         </div>
