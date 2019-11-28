@@ -53556,6 +53556,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -53574,9 +53580,10 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 sortable: true,
                 summary: 'COUNT',
                 width: 130
-            }, { prop: '_action', name: 'HOST', actionName: 'hosts', width: 120 },
+            }, { prop: '_action', name: 'HOST', actionName: 'hosts', width: 120 }, { prop: '_action', name: 'PORT', actionName: 'ports', width: 200 },
             // { prop: 'host', name: 'HOST', searchable: true },
-            { prop: 'port', name: 'PORT', filterable: true }, { prop: '_action', name: 'Action', actionName: 'actionCommon' }],
+            // { prop: 'port', name: 'PORT', filterable: true },
+            { prop: '_action', name: 'Action', actionName: 'actionCommon' }],
             tableData: this.records,
             tableAttribute: {
                 height: 650,
@@ -58895,8 +58902,16 @@ var render = function() {
               {
                 staticStyle: { display: "block", float: "left", width: "100%" }
               },
-              [_c("div", [_vm._v(_vm._s(host.host_name))])]
+              [_c("div", [_vm._v(_vm._s(host))])]
             )
+          })
+        }
+      },
+      {
+        key: "ports",
+        fn: function(scope) {
+          return _vm._l(scope.row.port, function(port) {
+            return _c("div", [_c("div", [_vm._v(_vm._s(port) + ", ")])])
           })
         }
       }

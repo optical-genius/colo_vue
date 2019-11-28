@@ -17,7 +17,13 @@
 
         <template slot-scope="scope" slot="hosts">
             <div v-for="host in scope.row.host" style="display: block; float: left; width: 100%;">
-                <div>{{host.host_name}}</div>
+                <div>{{host}}</div>
+            </div>
+        </template>
+
+        <template slot-scope="scope" slot="ports">
+            <div v-for="port in scope.row.port">
+                <div>{{port}}, </div>
             </div>
         </template>
     </vue-virtual-table>
@@ -45,8 +51,9 @@
                     width: 130
                 },
                 {prop: '_action', name: 'HOST', actionName: 'hosts', width: 120},
+                {prop: '_action', name: 'PORT', actionName: 'ports', width: 200},
                 // { prop: 'host', name: 'HOST', searchable: true },
-                { prop: 'port', name: 'PORT', filterable: true },
+                // { prop: 'port', name: 'PORT', filterable: true },
                 { prop: '_action', name: 'Action', actionName: 'actionCommon' }
             ],
             tableData: this.records,

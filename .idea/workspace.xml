@@ -5,6 +5,7 @@
       <change beforePath="Y:/.editorconfig" beforeDir="false" afterPath="Y:/.editorconfig" afterDir="false" />
       <change beforePath="Y:/.gitignore" beforeDir="false" afterPath="Y:/.gitignore" afterDir="false" />
       <change beforePath="Y:/.htaccess" beforeDir="false" afterPath="Y:/.htaccess" afterDir="false" />
+      <change beforePath="Y:/.idea/.name" beforeDir="false" afterPath="Y:/.idea/.name" afterDir="false" />
       <change beforePath="Y:/.idea/Y.iml" beforeDir="false" afterPath="Y:/.idea/Y.iml" afterDir="false" />
       <change beforePath="Y:/.idea/deployment.xml" beforeDir="false" afterPath="Y:/.idea/deployment.xml" afterDir="false" />
       <change beforePath="Y:/.idea/misc.xml" beforeDir="false" afterPath="Y:/.idea/misc.xml" afterDir="false" />
@@ -295,7 +296,7 @@
       <option name="presentableId" value="Default" />
       <updated>1574149975648</updated>
       <workItem from="1574149977871" duration="98554000" />
-      <workItem from="1574692007627" duration="30257000" />
+      <workItem from="1574692007627" duration="42182000" />
     </task>
     <servers />
   </component>
