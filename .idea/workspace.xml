@@ -5,6 +5,7 @@
       <change beforePath="Y:/.editorconfig" beforeDir="false" afterPath="Y:/.editorconfig" afterDir="false" />
       <change beforePath="Y:/.gitignore" beforeDir="false" afterPath="Y:/.gitignore" afterDir="false" />
       <change beforePath="Y:/.htaccess" beforeDir="false" afterPath="Y:/.htaccess" afterDir="false" />
+      <change beforePath="Y:/.idea/.name" beforeDir="false" afterPath="Y:/.idea/.name" afterDir="false" />
       <change beforePath="Y:/.idea/Y.iml" beforeDir="false" afterPath="Y:/.idea/Y.iml" afterDir="false" />
       <change beforePath="Y:/.idea/deployment.xml" beforeDir="false" afterPath="Y:/.idea/deployment.xml" afterDir="false" />
       <change beforePath="Y:/.idea/misc.xml" beforeDir="false" afterPath="Y:/.idea/misc.xml" afterDir="false" />
@@ -127,7 +128,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>Y:/composer.json</pharConfigPath>
     <execution>
       <executable />
@@ -253,7 +254,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="Y:/resources/js/components" />
+    <property name="last_opened_file_path" value="X:/" />
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
@@ -294,7 +295,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574149975648</updated>
-      <workItem from="1574149977871" duration="97896000" />
+      <workItem from="1574149977871" duration="98554000" />
+      <workItem from="1574692007627" duration="42182000" />
     </task>
     <servers />
   </component>
@@ -306,7 +308,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

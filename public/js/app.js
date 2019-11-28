@@ -53212,7 +53212,7 @@ var __vue_template_functional__ = false
 /* styles */
 var __vue_styles__ = injectStyle
 /* scopeId */
-var __vue_scopeId__ = "data-v-3507c676"
+var __vue_scopeId__ = null
 /* moduleIdentifier (server only) */
 var __vue_module_identifier__ = null
 var Component = normalizeComponent(
@@ -53255,13 +53255,13 @@ var content = __webpack_require__(68);
 if(typeof content === 'string') content = [[module.i, content, '']];
 if(content.locals) module.exports = content.locals;
 // add the styles to the DOM
-var update = __webpack_require__(4)("b3cdd540", content, false, {});
+var update = __webpack_require__(4)("cd7afd12", content, false, {});
 // Hot Module Replacement
 if(false) {
  // When the styles change, update the <style> tags
  if(!content.locals) {
-   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3507c676\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Clusterize.vue", function() {
-     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3507c676\",\"scoped\":true,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Clusterize.vue");
+   module.hot.accept("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3507c676\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Clusterize.vue", function() {
+     var newContent = require("!!../../../node_modules/css-loader/index.js!../../../node_modules/vue-loader/lib/style-compiler/index.js?{\"vue\":true,\"id\":\"data-v-3507c676\",\"scoped\":false,\"hasInlineConfig\":true}!../../../node_modules/vue-loader/lib/selector.js?type=styles&index=0!./Clusterize.vue");
      if(typeof newContent === 'string') newContent = [[module.id, newContent, '']];
      update(newContent);
    });
@@ -53279,7 +53279,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n.vue-recycle-scroller[data-v-3507c676] {\n    position: relative\n}\n.vue-recycle-scroller.direction-vertical[data-v-3507c676]:not(.page-mode) {\n    overflow-y: auto\n}\n.vue-recycle-scroller.direction-horizontal[data-v-3507c676]:not(.page-mode) {\n    overflow-x: auto\n}\n.scroller[data-v-3507c676] {\n    height: 100%;\n}\n.user[data-v-3507c676] {\n    height: 20px;\n    padding: 0 12px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n}\n", ""]);
+exports.push([module.i, "\n.scrollerrrrr {\n    height: 100%;\n}\n.user {\n    height: 32%;\n    padding: 0 12px;\n    display: -webkit-box;\n    display: -ms-flexbox;\n    display: flex;\n    -webkit-box-align: center;\n        -ms-flex-align: center;\n            align-items: center;\n    background-color: #c0c0c0;\n}\n", ""]);
 
 // exports
 
@@ -53310,10 +53310,62 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 /* harmony default export */ __webpack_exports__["default"] = ({
+    name: "App",
     props: {
         records: this.records
+    },
+    data: function data() {
+        return {
+            items: this.records
+        };
     }
 });
 
@@ -53325,27 +53377,90 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("RecycleScroller", {
+  return _c("DynamicScroller", {
     staticClass: "scroller",
-    attrs: {
-      "page-mode": "",
-      items: _vm.records,
-      "item-size": 20,
-      "key-field": "id"
-    },
+    attrs: { items: _vm.items, "min-item-size": 24 },
     scopedSlots: _vm._u([
       {
         key: "default",
         fn: function(ref) {
           var item = ref.item
+          var index = ref.index
+          var active = ref.active
           return [
-            _c("div", { staticClass: "user" }, [
-              _c("input", {
-                attrs: { type: "text" },
-                domProps: { value: item.ip_name }
-              }),
-              _vm._v(" : " + _vm._s(item.id) + "\n    ")
-            ])
+            _c(
+              "DynamicScrollerItem",
+              {
+                attrs: {
+                  item: item,
+                  active: active,
+                  "size-dependencies": [item.host],
+                  "data-index": index
+                }
+              },
+              [
+                _c("table", { staticClass: "table table-striped" }, [
+                  _c("thead", [
+                    _c("tr", [
+                      _c("th", { attrs: { scope: "col" } }, [_vm._v("IP")]),
+                      _vm._v(" "),
+                      _c("th", { attrs: { scope: "col" } }, [_vm._v("Host")]),
+                      _vm._v(" "),
+                      _c("th", { attrs: { scope: "col" } }, [_vm._v("Delete")])
+                    ])
+                  ]),
+                  _vm._v(" "),
+                  _c("tbody", [
+                    _c("tr", [
+                      _c("td", [
+                        _c("input", {
+                          attrs: { type: "text" },
+                          domProps: { value: item.ip_name }
+                        }),
+                        _c("br")
+                      ]),
+                      _vm._v(" "),
+                      _c(
+                        "td",
+                        _vm._l(item.host, function(host) {
+                          return _c(
+                            "div",
+                            { staticStyle: { "margin-bottom": "0px" } },
+                            [
+                              _c("input", {
+                                attrs: { type: "text" },
+                                domProps: { value: host.host_name }
+                              })
+                            ]
+                          )
+                        }),
+                        0
+                      ),
+                      _vm._v(" "),
+                      _c("td", [
+                        _c(
+                          "button",
+                          {
+                            staticClass: "btn btn-danger",
+                            on: {
+                              click: function($event) {
+                                return _vm.deleteIp(_vm.ip)
+                              }
+                            }
+                          },
+                          [
+                            _c("i", {
+                              staticClass: "fa fa-trash",
+                              staticStyle: { color: "white" }
+                            })
+                          ]
+                        )
+                      ])
+                    ])
+                  ])
+                ])
+              ]
+            )
           ]
         }
       }
@@ -53436,6 +53551,17 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
@@ -53452,8 +53578,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 name: 'IP',
                 searchable: true,
                 sortable: true,
-                summary: 'COUNT'
-            }, { prop: 'host', name: 'HOST', searchable: true }, { prop: 'port', name: 'PORT', filterable: true }, { prop: '_action', name: 'Action', actionName: 'actionCommon' }],
+                summary: 'COUNT',
+                width: 130
+            }, { prop: '_action', name: 'HOST', actionName: 'hosts', width: 120 }, { prop: '_action', name: 'PORT', actionName: 'ports', width: 200 },
+            // { prop: 'host', name: 'HOST', searchable: true },
+            // { prop: 'port', name: 'PORT', filterable: true },
+            { prop: '_action', name: 'Action', actionName: 'actionCommon' }],
             tableData: this.records,
             tableAttribute: {
                 height: 650,
@@ -53468,7 +53598,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         };
     },
 
-    mounted: function mounted() {},
+    mounted: function mounted() {
+        // let arr = [];
+        //
+        // this.records.forEach((value, index) => {
+        //     arr.push(value);
+        //     console.log(value.host);
+        // });
+    },
     methods: {
         handleSelectionChange: function handleSelectionChange(rows) {
             console.log(rows);
@@ -58718,7 +58855,7 @@ var render = function() {
       config: _vm.tableConfig,
       data: _vm.tableData,
       height: 700,
-      itemHeight: 85,
+      itemHeight: 120,
       minWidth: 1000,
       selectable: true,
       enableExport: true,
@@ -58754,6 +58891,28 @@ var render = function() {
               [_vm._v("Delete")]
             )
           ]
+        }
+      },
+      {
+        key: "hosts",
+        fn: function(scope) {
+          return _vm._l(scope.row.host, function(host) {
+            return _c(
+              "div",
+              {
+                staticStyle: { display: "block", float: "left", width: "100%" }
+              },
+              [_c("div", [_vm._v(_vm._s(host))])]
+            )
+          })
+        }
+      },
+      {
+        key: "ports",
+        fn: function(scope) {
+          return _vm._l(scope.row.port, function(port) {
+            return _c("div", [_c("div", [_vm._v(_vm._s(port) + ", ")])])
+          })
         }
       }
     ])
