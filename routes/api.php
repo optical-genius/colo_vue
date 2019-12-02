@@ -24,6 +24,9 @@ Route::get('posts', 'PostController@get');
 
 Route::delete('posts/{id}', 'PostController@delete');
 
-Route::get('ips', 'IpController@get');
+//Route::get('ips', 'IpController@get');
 
 Route::delete('ips/{id}', 'IpController@delete');
+
+
+Route::get('tests', 'IpController@virtual');
