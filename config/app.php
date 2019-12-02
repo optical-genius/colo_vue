@@ -153,7 +153,7 @@ return [
         Barryvdh\Debugbar\ServiceProvider::class,
         /* Vinelab\NeoEloquent\NeoEloquentServiceProvider::class, */
         TSF\Neo4jClient\Neo4jServiceProvider::class,
-        udartsev\LaravelPostmanExport\PostmanServiceProvider::class,
+//        udartsev\LaravelPostmanExport\PostmanServiceProvider::class,
         /*
          * Application Service Providers...
          */

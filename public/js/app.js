@@ -15807,6 +15807,7 @@ module.exports = __webpack_require__(86);
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bus", function() { return bus; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__store_index__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_virtual_scroller__ = __webpack_require__(49);
 
@@ -15830,6 +15831,7 @@ window.Vue = __webpack_require__(7);
 
 
 
+var bus = new Vue();
 window.Vue.use(__WEBPACK_IMPORTED_MODULE_1_vue_virtual_scroller__["a" /* default */]);
 
 Vue.component('searchcomponent', __webpack_require__(50));
@@ -52583,6 +52585,7 @@ module.exports = function listToStyles (parentId, list) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_js__ = __webpack_require__(18);
 //
 //
 //
@@ -52629,8 +52632,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }).catch(function (error) {
                 console.log(error);
             });
-            //bus.$emit('mega-event', this.output.vueRecordArray['0']);
-
+            __WEBPACK_IMPORTED_MODULE_0__app_js__["bus"].$emit('mega-event', this.output.vueRecordArray);
         }
     }
 
@@ -53791,7 +53793,8 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_virtual_table__ = __webpack_require__(78);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_js__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_virtual_table__ = __webpack_require__(78);
 //
 //
 //
@@ -53826,11 +53829,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+
 
 
 /* harmony default export */ __webpack_exports__["default"] = ({
     components: {
-        vuevirtualtable: __WEBPACK_IMPORTED_MODULE_0_vue_virtual_table__["a" /* default */]
+        vuevirtualtable: __WEBPACK_IMPORTED_MODULE_1_vue_virtual_table__["a" /* default */]
     },
     props: {
         records: this.records
@@ -53869,6 +53873,13 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
         //     arr.push(value);
         //     console.log(value.host);
         // });
+    },
+    created: function created() {
+        var _this = this;
+
+        __WEBPACK_IMPORTED_MODULE_0__app_js__["bus"].$on('mega-event', function (data) {
+            _this.tableData = data;
+        });
     },
     methods: {
         handleSelectionChange: function handleSelectionChange(rows) {

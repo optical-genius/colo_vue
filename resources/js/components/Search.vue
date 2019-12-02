@@ -18,7 +18,7 @@
 </template>
 
 <script>
-
+    import { bus } from '../app.js';
     export default {
         name: 'searchcomponent',
         data: function() {
@@ -44,7 +44,7 @@
                     .catch(function (error) {
                         console.log(error);
                     });
-                //bus.$emit('mega-event', this.output.vueRecordArray['0']);
+                bus.$emit('mega-event', this.output.vueRecordArray);
 
 
              }

@@ -33,7 +33,8 @@
 </template>
 
 <script>
-    import vuevirtualtable from 'vue-virtual-table'
+    import { bus } from '../app.js';
+    import vuevirtualtable from 'vue-virtual-table';
     export default {
         components: {
             vuevirtualtable
@@ -79,6 +80,11 @@
             //     arr.push(value);
             //     console.log(value.host);
             // });
+        },
+        created: function() {
+            bus.$on('mega-event', data => {
+                this.tableData = data;
+            });
         },
         methods: {
             handleSelectionChange(rows) {

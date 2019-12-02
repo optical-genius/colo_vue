@@ -19,6 +19,7 @@ window.Vue = require('vue');
 import store from './store/index';
 import recyclescroller from 'vue-virtual-scroller';
 
+export const bus = new Vue()
 window.Vue.use(recyclescroller);
 
 
