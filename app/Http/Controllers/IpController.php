@@ -109,7 +109,9 @@ class IpController extends Controller
             ini_set('memory_limit', '1024M');
             $start = microtime(true);
 
-            $test = Neo4jClient::run('MATCH (ip:Ip {ip_name: "' . $request["ip_name"] . '"}) WITH ip, [(ip)-->(port:Port) | port] as ports, [(ip)-->(host:Host) | host] as hosts LIMIT 100 RETURN { id: ID(ip), ip_name: ip.ip_name }, ports, hosts');
+
+
+            $test = Neo4jClient::run('MATCH (ip:Ip) WHERE ip.ip_name STARTS WITH "' . $request["ip_name"] . '" WITH ip, [(ip)-->(port:Port) | port] as ports, [(ip)-->(host:Host) | host] as hosts LIMIT 100 RETURN { id: ID(ip), ip_name: ip.ip_name }, ports, hosts');
 
 
             $records = $test->getRecords();
