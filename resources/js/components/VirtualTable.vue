@@ -1,4 +1,7 @@
+
+
 <template>
+
     <vue-virtual-table
         :config="tableConfig"
         :data="tableData"
