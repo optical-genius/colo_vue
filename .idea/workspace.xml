@@ -1,9 +1,130 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="88266db3-26d3-490c-b241-a2c24350995c" name="Default Changelist" comment="" />
+    <list default="true" id="88266db3-26d3-490c-b241-a2c24350995c" name="Default Changelist" comment="">
+      <change beforePath="Y:/.editorconfig" beforeDir="false" afterPath="Y:/.editorconfig" afterDir="false" />
+      <change beforePath="Y:/.gitignore" beforeDir="false" afterPath="Y:/.gitignore" afterDir="false" />
+      <change beforePath="Y:/.htaccess" beforeDir="false" afterPath="Y:/.htaccess" afterDir="false" />
+      <change beforePath="Y:/.idea/.name" beforeDir="false" afterPath="Y:/.idea/.name" afterDir="false" />
+      <change beforePath="Y:/.idea/Y.iml" beforeDir="false" afterPath="Y:/.idea/Y.iml" afterDir="false" />
+      <change beforePath="Y:/.idea/Z.iml" beforeDir="false" afterPath="Y:/.idea/Z.iml" afterDir="false" />
+      <change beforePath="Y:/.idea/deployment.xml" beforeDir="false" afterPath="Y:/.idea/deployment.xml" afterDir="false" />
+      <change beforePath="Y:/.idea/misc.xml" beforeDir="false" afterPath="Y:/.idea/misc.xml" afterDir="false" />
+      <change beforePath="Y:/.idea/modules.xml" beforeDir="false" afterPath="Y:/.idea/modules.xml" afterDir="false" />
+      <change beforePath="Y:/.idea/php.xml" beforeDir="false" afterPath="Y:/.idea/php.xml" afterDir="false" />
+      <change beforePath="Y:/.idea/vcs.xml" beforeDir="false" afterPath="Y:/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="Y:/.idea/workspace.xml" beforeDir="false" afterPath="Y:/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="Y:/README.md" beforeDir="false" afterPath="Y:/README.md" afterDir="false" />
+      <change beforePath="Y:/app/Console/Kernel.php" beforeDir="false" afterPath="Y:/app/Console/Kernel.php" afterDir="false" />
+      <change beforePath="Y:/app/Exceptions/Handler.php" beforeDir="false" afterPath="Y:/app/Exceptions/Handler.php" afterDir="false" />
+      <change beforePath="Y:/app/Http/Controllers/Auth/ForgotPasswordController.php" beforeDir="false" afterPath="Y:/app/Http/Controllers/Auth/ForgotPasswordController.php" afterDir="false" />
+      <change beforePath="Y:/app/Http/Controllers/Auth/LoginController.php" beforeDir="false" afterPath="Y:/app/Http/Controllers/Auth/LoginController.php" afterDir="false" />
+      <change beforePath="Y:/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="Y:/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="Y:/app/Http/Controllers/Auth/ResetPasswordController.php" beforeDir="false" afterPath="Y:/app/Http/Controllers/Auth/ResetPasswordController.php" afterDir="false" />
+      <change beforePath="Y:/app/Http/Controllers/Controller.php" beforeDir="false" afterPath="Y:/app/Http/Controllers/Controller.php" afterDir="false" />
+      <change beforePath="Y:/app/Http/Controllers/IpController.php" beforeDir="false" afterPath="Y:/app/Http/Controllers/IpController.php" afterDir="false" />
+      <change beforePath="Y:/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="Y:/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="Y:/app/Http/Kernel.php" beforeDir="false" afterPath="Y:/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="Y:/app/Http/Middleware/CheckForMaintenanceMode.php" beforeDir="false" afterPath="Y:/app/Http/Middleware/CheckForMaintenanceMode.php" afterDir="false" />
+      <change beforePath="Y:/app/Http/Middleware/EncryptCookies.php" beforeDir="false" afterPath="Y:/app/Http/Middleware/EncryptCookies.php" afterDir="false" />
+      <change beforePath="Y:/app/Http/Middleware/RedirectIfAuthenticated.php" beforeDir="false" afterPath="Y:/app/Http/Middleware/RedirectIfAuthenticated.php" afterDir="false" />
+      <change beforePath="Y:/app/Http/Middleware/TrimStrings.php" beforeDir="false" afterPath="Y:/app/Http/Middleware/TrimStrings.php" afterDir="false" />
+      <change beforePath="Y:/app/Http/Middleware/TrustProxies.php" beforeDir="false" afterPath="Y:/app/Http/Middleware/TrustProxies.php" afterDir="false" />
+      <change beforePath="Y:/app/Http/Middleware/VerifyCsrfToken.php" beforeDir="false" afterPath="Y:/app/Http/Middleware/VerifyCsrfToken.php" afterDir="false" />
+      <change beforePath="Y:/app/Ip.php" beforeDir="false" afterPath="Y:/app/Ip.php" afterDir="false" />
+      <change beforePath="Y:/app/Post.php" beforeDir="false" afterPath="Y:/app/Post.php" afterDir="false" />
+      <change beforePath="Y:/app/Providers/AppServiceProvider.php" beforeDir="false" afterPath="Y:/app/Providers/AppServiceProvider.php" afterDir="false" />
+      <change beforePath="Y:/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="Y:/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="Y:/app/Providers/BroadcastServiceProvider.php" beforeDir="false" afterPath="Y:/app/Providers/BroadcastServiceProvider.php" afterDir="false" />
+      <change beforePath="Y:/app/Providers/EventServiceProvider.php" beforeDir="false" afterPath="Y:/app/Providers/EventServiceProvider.php" afterDir="false" />
+      <change beforePath="Y:/app/Providers/RouteServiceProvider.php" beforeDir="false" afterPath="Y:/app/Providers/RouteServiceProvider.php" afterDir="false" />
+      <change beforePath="Y:/app/User.php" beforeDir="false" afterPath="Y:/app/User.php" afterDir="false" />
+      <change beforePath="Y:/artisan" beforeDir="false" afterPath="Y:/artisan" afterDir="false" />
+      <change beforePath="Y:/bootstrap/app.php" beforeDir="false" afterPath="Y:/bootstrap/app.php" afterDir="false" />
+      <change beforePath="Y:/bootstrap/cache/.gitignore" beforeDir="false" afterPath="Y:/bootstrap/cache/.gitignore" afterDir="false" />
+      <change beforePath="Y:/composer.json" beforeDir="false" afterPath="Y:/composer.json" afterDir="false" />
+      <change beforePath="Y:/composer.lock" beforeDir="false" afterPath="Y:/composer.lock" afterDir="false" />
+      <change beforePath="Y:/composer.phar" beforeDir="false" afterPath="Y:/composer.phar" afterDir="false" />
+      <change beforePath="Y:/config/app.php" beforeDir="false" afterPath="Y:/config/app.php" afterDir="false" />
+      <change beforePath="Y:/config/auth.php" beforeDir="false" afterPath="Y:/config/auth.php" afterDir="false" />
+      <change beforePath="Y:/config/broadcasting.php" beforeDir="false" afterPath="Y:/config/broadcasting.php" afterDir="false" />
+      <change beforePath="Y:/config/cache.php" beforeDir="false" afterPath="Y:/config/cache.php" afterDir="false" />
+      <change beforePath="Y:/config/database.php" beforeDir="false" afterPath="Y:/config/database.php" afterDir="false" />
+      <change beforePath="Y:/config/filesystems.php" beforeDir="false" afterPath="Y:/config/filesystems.php" afterDir="false" />
+      <change beforePath="Y:/config/hashing.php" beforeDir="false" afterPath="Y:/config/hashing.php" afterDir="false" />
+      <change beforePath="Y:/config/logging.php" beforeDir="false" afterPath="Y:/config/logging.php" afterDir="false" />
+      <change beforePath="Y:/config/mail.php" beforeDir="false" afterPath="Y:/config/mail.php" afterDir="false" />
+      <change beforePath="Y:/config/neo4j.php" beforeDir="false" afterPath="Y:/config/neo4j.php" afterDir="false" />
+      <change beforePath="Y:/config/queue.php" beforeDir="false" afterPath="Y:/config/queue.php" afterDir="false" />
+      <change beforePath="Y:/config/services.php" beforeDir="false" afterPath="Y:/config/services.php" afterDir="false" />
+      <change beforePath="Y:/config/session.php" beforeDir="false" afterPath="Y:/config/session.php" afterDir="false" />
+      <change beforePath="Y:/config/view.php" beforeDir="false" afterPath="Y:/config/view.php" afterDir="false" />
+      <change beforePath="Y:/database/.gitignore" beforeDir="false" afterPath="Y:/database/.gitignore" afterDir="false" />
+      <change beforePath="Y:/database/factories/PostFactory.php" beforeDir="false" afterPath="Y:/database/factories/PostFactory.php" afterDir="false" />
+      <change beforePath="Y:/database/factories/UserFactory.php" beforeDir="false" afterPath="Y:/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="Y:/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="Y:/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="Y:/database/migrations/2014_10_12_100000_create_password_resets_table.php" beforeDir="false" afterPath="Y:/database/migrations/2014_10_12_100000_create_password_resets_table.php" afterDir="false" />
+      <change beforePath="Y:/database/migrations/2018_08_23_144135_create_posts_table.php" beforeDir="false" afterPath="Y:/database/migrations/2018_08_23_144135_create_posts_table.php" afterDir="false" />
+      <change beforePath="Y:/database/seeds/DatabaseSeeder.php" beforeDir="false" afterPath="Y:/database/seeds/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="Y:/package-lock.json" beforeDir="false" afterPath="Y:/package-lock.json" afterDir="false" />
+      <change beforePath="Y:/package.json" beforeDir="false" afterPath="Y:/package.json" afterDir="false" />
+      <change beforePath="Y:/phpunit.xml" beforeDir="false" afterPath="Y:/phpunit.xml" afterDir="false" />
+      <change beforePath="Y:/public/.htaccess" beforeDir="false" afterPath="Y:/public/.htaccess" afterDir="false" />
+      <change beforePath="Y:/public/css/app.css" beforeDir="false" afterPath="Y:/public/css/app.css" afterDir="false" />
+      <change beforePath="Y:/public/favicon.ico" beforeDir="false" afterPath="Y:/public/favicon.ico" afterDir="false" />
+      <change beforePath="Y:/public/images/demo.gif" beforeDir="false" afterPath="Y:/public/images/demo.gif" afterDir="false" />
+      <change beforePath="Y:/public/index.php" beforeDir="false" afterPath="Y:/public/index.php" afterDir="false" />
+      <change beforePath="Y:/public/js/app.js" beforeDir="false" afterPath="Y:/public/js/app.js" afterDir="false" />
+      <change beforePath="Y:/public/mix-manifest.json" beforeDir="false" afterPath="Y:/public/mix-manifest.json" afterDir="false" />
+      <change beforePath="Y:/public/robots.txt" beforeDir="false" afterPath="Y:/public/robots.txt" afterDir="false" />
+      <change beforePath="Y:/resources/js/app.js" beforeDir="false" afterPath="Y:/resources/js/app.js" afterDir="false" />
+      <change beforePath="Y:/resources/js/bootstrap.js" beforeDir="false" afterPath="Y:/resources/js/bootstrap.js" afterDir="false" />
+      <change beforePath="Y:/resources/js/components/Clusterize.vue" beforeDir="false" afterPath="Y:/resources/js/components/Clusterize.vue" afterDir="false" />
+      <change beforePath="Y:/resources/js/components/CreatePost.vue" beforeDir="false" afterPath="Y:/resources/js/components/CreatePost.vue" afterDir="false" />
+      <change beforePath="Y:/resources/js/components/ExampleComponent.vue" beforeDir="false" afterPath="Y:/resources/js/components/ExampleComponent.vue" afterDir="false" />
+      <change beforePath="Y:/resources/js/components/Posts.vue" beforeDir="false" afterPath="Y:/resources/js/components/Posts.vue" afterDir="false" />
+      <change beforePath="Y:/resources/js/components/Search.vue" beforeDir="false" afterPath="Y:/resources/js/components/Search.vue" afterDir="false" />
+      <change beforePath="Y:/resources/js/components/VirtualTable.vue" beforeDir="false" afterPath="Y:/resources/js/components/VirtualTable.vue" afterDir="false" />
+      <change beforePath="Y:/resources/js/components/ip/Ip.vue" beforeDir="false" afterPath="Y:/resources/js/components/ip/Ip.vue" afterDir="false" />
+      <change beforePath="Y:/resources/js/store/actions.js" beforeDir="false" afterPath="Y:/resources/js/store/actions.js" afterDir="false" />
+      <change beforePath="Y:/resources/js/store/getters.js" beforeDir="false" afterPath="Y:/resources/js/store/getters.js" afterDir="false" />
+      <change beforePath="Y:/resources/js/store/index.js" beforeDir="false" afterPath="Y:/resources/js/store/index.js" afterDir="false" />
+      <change beforePath="Y:/resources/js/store/mutations.js" beforeDir="false" afterPath="Y:/resources/js/store/mutations.js" afterDir="false" />
+      <change beforePath="Y:/resources/js/store/state.js" beforeDir="false" afterPath="Y:/resources/js/store/state.js" afterDir="false" />
+      <change beforePath="Y:/resources/lang/en/auth.php" beforeDir="false" afterPath="Y:/resources/lang/en/auth.php" afterDir="false" />
+      <change beforePath="Y:/resources/lang/en/pagination.php" beforeDir="false" afterPath="Y:/resources/lang/en/pagination.php" afterDir="false" />
+      <change beforePath="Y:/resources/lang/en/passwords.php" beforeDir="false" afterPath="Y:/resources/lang/en/passwords.php" afterDir="false" />
+      <change beforePath="Y:/resources/lang/en/validation.php" beforeDir="false" afterPath="Y:/resources/lang/en/validation.php" afterDir="false" />
+      <change beforePath="Y:/resources/sass/_variables.scss" beforeDir="false" afterPath="Y:/resources/sass/_variables.scss" afterDir="false" />
+      <change beforePath="Y:/resources/sass/app.scss" beforeDir="false" afterPath="Y:/resources/sass/app.scss" afterDir="false" />
+      <change beforePath="Y:/resources/views/ips-clusterize-table.blade.php" beforeDir="false" afterPath="Y:/resources/views/ips-clusterize-table.blade.php" afterDir="false" />
+      <change beforePath="Y:/resources/views/ips-clusterize.blade.php" beforeDir="false" afterPath="Y:/resources/views/ips-clusterize.blade.php" afterDir="false" />
+      <change beforePath="Y:/resources/views/ips.blade.php" beforeDir="false" afterPath="Y:/resources/views/ips.blade.php" afterDir="false" />
+      <change beforePath="Y:/resources/views/posts.blade.php" beforeDir="false" afterPath="Y:/resources/views/posts.blade.php" afterDir="false" />
+      <change beforePath="Y:/resources/views/welcome.blade.php" beforeDir="false" afterPath="Y:/resources/views/welcome.blade.php" afterDir="false" />
+      <change beforePath="Y:/routes/api.php" beforeDir="false" afterPath="Y:/routes/api.php" afterDir="false" />
+      <change beforePath="Y:/routes/channels.php" beforeDir="false" afterPath="Y:/routes/channels.php" afterDir="false" />
+      <change beforePath="Y:/routes/console.php" beforeDir="false" afterPath="Y:/routes/console.php" afterDir="false" />
+      <change beforePath="Y:/routes/web.php" beforeDir="false" afterPath="Y:/routes/web.php" afterDir="false" />
+      <change beforePath="Y:/server.php" beforeDir="false" afterPath="Y:/server.php" afterDir="false" />
+      <change beforePath="Y:/storage/app/.gitignore" beforeDir="false" afterPath="Y:/storage/app/.gitignore" afterDir="false" />
+      <change beforePath="Y:/storage/app/public/.gitignore" beforeDir="false" afterPath="Y:/storage/app/public/.gitignore" afterDir="false" />
+      <change beforePath="Y:/storage/debugbar/.gitignore" beforeDir="false" afterPath="Y:/storage/debugbar/.gitignore" afterDir="false" />
+      <change beforePath="Y:/storage/framework/.gitignore" beforeDir="false" afterPath="Y:/storage/framework/.gitignore" afterDir="false" />
+      <change beforePath="Y:/storage/framework/cache/.gitignore" beforeDir="false" afterPath="Y:/storage/framework/cache/.gitignore" afterDir="false" />
+      <change beforePath="Y:/storage/framework/sessions/.gitignore" beforeDir="false" afterPath="Y:/storage/framework/sessions/.gitignore" afterDir="false" />
+      <change beforePath="Y:/storage/framework/testing/.gitignore" beforeDir="false" afterPath="Y:/storage/framework/testing/.gitignore" afterDir="false" />
+      <change beforePath="Y:/storage/framework/views/.gitignore" beforeDir="false" afterPath="Y:/storage/framework/views/.gitignore" afterDir="false" />
+      <change beforePath="Y:/storage/logs/.gitignore" beforeDir="false" afterPath="Y:/storage/logs/.gitignore" afterDir="false" />
+      <change beforePath="Y:/tests/CreatesApplication.php" beforeDir="false" afterPath="Y:/tests/CreatesApplication.php" afterDir="false" />
+      <change beforePath="Y:/tests/Feature/ExampleTest.php" beforeDir="false" afterPath="Y:/tests/Feature/ExampleTest.php" afterDir="false" />
+      <change beforePath="Y:/tests/TestCase.php" beforeDir="false" afterPath="Y:/tests/TestCase.php" afterDir="false" />
+      <change beforePath="Y:/tests/Unit/ExampleTest.php" beforeDir="false" afterPath="Y:/tests/Unit/ExampleTest.php" afterDir="false" />
+      <change beforePath="Y:/tests/composer_lock.lock" beforeDir="false" afterPath="Y:/tests/composer_lock.lock" afterDir="false" />
+      <change beforePath="Y:/webpack.mix.js" beforeDir="false" afterPath="Y:/webpack.mix.js" afterDir="false" />
+      <change beforePath="Y:/yarn.lock" beforeDir="false" afterPath="Y:/yarn.lock" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -11,57 +132,9 @@
   </component>
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>Y:/composer.json</pharConfigPath>
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="IpController.php" pinned="false" current-in-tab="true">
-        <entry file="file://Z:/app/Http/Controllers/IpController.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-448">
-              <caret line="76" selection-start-line="76" selection-end-line="76" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Search.vue" pinned="false" current-in-tab="false">
-        <entry file="file://Z:/resources/js/components/Search.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="VirtualTable.vue" pinned="false" current-in-tab="false">
-        <entry file="file://Z:/resources/js/components/VirtualTable.vue">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="518">
-              <caret line="85" column="38" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
-              <folding>
-                <element signature="e#1003#1035#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
-        <entry file="file://Z:/resources/js/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" selection-start-line="20" selection-end-line="20" />
-              <folding>
-                <element signature="e#587#621#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
-  </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>ClientBuilder</find>
-    </findStrings>
+    <execution>
+      <executable />
+    </execution>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -70,30 +143,6 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="Y:/" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="Z:/vendor/tsf/laravel-neo4j-php-client/src/Neo4jClient.php" />
-        <option value="Z:/vendor/graphaware/neo4j-php-client/src/ClientBuilder.php" />
-        <option value="Z:/config/app.php" />
-        <option value="Z:/resources/js/app.js" />
-        <option value="Z:/resources/js/components/VirtualTable.vue" />
-        <option value="Z:/resources/js/components/Search.vue" />
-        <option value="Z:/app/Http/Controllers/IpController.php" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths>
-      <path value="Z:/package.json" />
-    </packageJsonPaths>
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -203,35 +252,11 @@
       <path value="Y:/vendor/udartsev/laravel-postman-export" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="width" value="1935" />
-    <option name="height" value="1040" />
-  </component>
   <component name="ProjectId" id="1TpHAp0I8L6To5eoJl9ukXlQDA8" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="Z" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Z:" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="Z:/" />
+    <property name="last_opened_file_path" value="Y:/resources/js/components" />
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
@@ -256,6 +281,7 @@
   <component name="RunManager">
     <configuration name="phpunit.xml" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <TestRunner scope="XML" />
+      <method v="2" />
     </configuration>
   </component>
   <component name="ServiceViewManager">
@@ -271,43 +297,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1574149975648</updated>
-      <workItem from="1574149977871" duration="97896000" />
-      <workItem from="1574966312293" duration="23000" />
-      <workItem from="1574966352488" duration="46000" />
-      <workItem from="1574966398988" duration="136000" />
-      <workItem from="1574966978619" duration="128000" />
-      <workItem from="1574967109376" duration="58000" />
-      <workItem from="1574967173100" duration="13671000" />
+      <workItem from="1574149977871" duration="98554000" />
+      <workItem from="1574692007627" duration="80534000" />
+      <workItem from="1575360521104" duration="17086000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14062000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <layout>
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50067115" side_tool="true" weight="0.32905984" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Version Control" order="7" sideWeight="0.49932885" visible="true" weight="0.32905984" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info anchor="right" id="Remote Host" order="3" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2671141" />
-      <window_info anchor="bottom" id="Docker" order="7" />
-      <window_info anchor="right" id="Database" order="3" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -318,149 +312,17 @@
         <entry key="MAIN">
           <value>
             <State>
-              <option name="RECENTLY_FILTERED_USER_GROUPS">
-                <collection />
-              </option>
-              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-                <collection />
-              </option>
+              <option name="COLUMN_ORDER" />
             </State>
           </value>
         </entry>
       </map>
     </option>
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="VcsManagerConfiguration">
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="(add) new project" />
     <option name="LAST_COMMIT_MESSAGE" value="(add) new project" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://Z:/storage/logs/laravel.log">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15208" />
-      </provider>
-    </entry>
-    <entry file="file://Z:/vendor/php-http/guzzle6-adapter/src/Client.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://Z:/vendor/php-http/guzzle6-adapter/src/Promise.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://Z:/vendor/php-http/httplug/src/HttpClient.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://Z:/vendor/tsf/laravel-neo4j-php-client/src/config/config.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://Z:/vendor/tsf/laravel-neo4j-php-client/src/Facades/Neo4jClient.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://Z:/vendor/tsf/laravel-neo4j-php-client/src/Neo4jClient.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="525">
-          <caret line="43" column="7" lean-forward="true" selection-start-line="43" selection-start-column="7" selection-end-line="43" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://Z:/vendor/graphaware/neo4j-php-client/src/Config.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-230" />
-      </provider>
-    </entry>
-    <entry file="file://Z:/vendor/graphaware/neo4j-php-client/src/Neo4jClientEvents.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://Z:/vendor/graphaware/neo4j-php-client/src/Stack.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1930" />
-      </provider>
-    </entry>
-    <entry file="file://Z:/vendor/graphaware/neo4j-php-client/src/StackInterface.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://Z:/vendor/graphaware/neo4j-php-client/src/ClientBuilder.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2471">
-          <caret line="23" column="28" lean-forward="true" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://Z:/vendor/graphaware/neo4j-php-client/src/HttpDriver/Configuration.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-910">
-          <caret line="13" column="4" lean-forward="true" selection-start-line="13" selection-start-column="4" selection-end-line="13" selection-end-column="4" />
-          <folding>
-            <element signature="e#306#351#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://Z:/vendor/graphaware/neo4j-php-client/src/HttpDriver/Pipeline.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://Z:/vendor/graphaware/neo4j-php-client/src/HttpDriver/GraphDatabase.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://Z:/vendor/graphaware/neo4j-php-client/src/Connection/Connection.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2508" />
-      </provider>
-    </entry>
-    <entry file="file://Z:/vendor/graphaware/neo4j-php-client/src/HttpDriver/Driver.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-102" />
-      </provider>
-    </entry>
-    <entry file="file://Z:/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-234" />
-      </provider>
-    </entry>
-    <entry file="file://Z:/config/app.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="155" selection-start-line="155" selection-start-column="2" selection-end-line="155" selection-end-column="70" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://Z:/resources/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-          <folding>
-            <element signature="e#587#621#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://Z:/resources/js/components/VirtualTable.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="518">
-          <caret line="85" column="38" selection-start-line="85" selection-start-column="38" selection-end-line="85" selection-end-column="38" />
-          <folding>
-            <element signature="e#1003#1035#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://Z:/resources/js/components/Search.vue">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="816">
-          <caret line="48" selection-start-line="48" selection-end-line="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://Z:/app/Http/Controllers/IpController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-448">
-          <caret line="76" selection-start-line="76" selection-end-line="76" />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

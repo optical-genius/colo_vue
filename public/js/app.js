@@ -60,7 +60,7 @@
 /******/ 	__webpack_require__.p = "/";
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = 17);
+/******/ 	return __webpack_require__(__webpack_require__.s = 18);
 /******/ })
 /************************************************************************/
 /******/ ([
@@ -70,7 +70,7 @@
 "use strict";
 
 
-var bind = __webpack_require__(10);
+var bind = __webpack_require__(11);
 var isBuffer = __webpack_require__(25);
 
 /*global toString:true*/
@@ -821,6 +821,51 @@ function applyToTag (styleElement, obj) {
 
 /***/ }),
 /* 5 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bus", function() { return bus; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__store_index__ = __webpack_require__(44);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_virtual_scroller__ = __webpack_require__(49);
+
+/**
+ * First we will load all of this project's JavaScript dependencies which
+ * includes Vue and other libraries. It is a great starting point when
+ * building robust, powerful web applications using Vue and Laravel.
+ */
+
+__webpack_require__(19);
+
+window.Vue = __webpack_require__(8);
+
+/**
+ * Next, we will create a fresh Vue application instance and attach it to
+ * the page. Then, you may begin adding components to this application
+ * or customize the JavaScript scaffolding to fit your unique needs.
+ */
+
+// Vue.component('example-component', require('./components/ExampleComponent.vue'));
+
+
+
+var bus = new Vue();
+window.Vue.use(__WEBPACK_IMPORTED_MODULE_1_vue_virtual_scroller__["a" /* default */]);
+
+Vue.component('searchcomponent', __webpack_require__(50));
+Vue.component('posts', __webpack_require__(56));
+Vue.component('createPost', __webpack_require__(61));
+Vue.component('ips', __webpack_require__(66));
+Vue.component('recyclescroller', __webpack_require__(71));
+Vue.component('vuevirtualtable', __webpack_require__(76));
+
+var app = new Vue({
+  el: '#app',
+  store: __WEBPACK_IMPORTED_MODULE_0__store_index__["a" /* default */]
+});
+
+/***/ }),
+/* 6 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -3445,7 +3490,7 @@ Popper.Defaults = Defaults;
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
 /***/ }),
-/* 6 */
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -3468,10 +3513,10 @@ function getDefaultAdapter() {
   var adapter;
   if (typeof XMLHttpRequest !== 'undefined') {
     // For browsers use XHR adapter
-    adapter = __webpack_require__(12);
+    adapter = __webpack_require__(13);
   } else if (typeof process !== 'undefined') {
     // For node use HTTP adapter
-    adapter = __webpack_require__(12);
+    adapter = __webpack_require__(13);
   }
   return adapter;
 }
@@ -3546,10 +3591,10 @@ utils.forEach(['post', 'put', 'patch'], function forEachMethodWithData(method) {
 
 module.exports = defaults;
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(11)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(12)))
 
 /***/ }),
-/* 7 */
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 if (false) {
@@ -3560,7 +3605,7 @@ if (false) {
 
 
 /***/ }),
-/* 8 */
+/* 9 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -4624,7 +4669,7 @@ var index_esm = {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
 /***/ }),
-/* 9 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 var __WEBPACK_AMD_DEFINE_ARRAY__, __WEBPACK_AMD_DEFINE_RESULT__;/*!
@@ -15229,7 +15274,7 @@ return jQuery;
 
 
 /***/ }),
-/* 10 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15247,7 +15292,7 @@ module.exports = function bind(fn, thisArg) {
 
 
 /***/ }),
-/* 11 */
+/* 12 */
 /***/ (function(module, exports) {
 
 // shim for using process in browser
@@ -15437,7 +15482,7 @@ process.umask = function() { return 0; };
 
 
 /***/ }),
-/* 12 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15448,7 +15493,7 @@ var settle = __webpack_require__(28);
 var buildURL = __webpack_require__(30);
 var parseHeaders = __webpack_require__(31);
 var isURLSameOrigin = __webpack_require__(32);
-var createError = __webpack_require__(13);
+var createError = __webpack_require__(14);
 
 module.exports = function xhrAdapter(config) {
   return new Promise(function dispatchXhrRequest(resolve, reject) {
@@ -15606,7 +15651,7 @@ module.exports = function xhrAdapter(config) {
 
 
 /***/ }),
-/* 13 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15631,7 +15676,7 @@ module.exports = function createError(message, config, code, request, response) 
 
 
 /***/ }),
-/* 14 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15643,7 +15688,7 @@ module.exports = function isCancel(value) {
 
 
 /***/ }),
-/* 15 */
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -15669,7 +15714,7 @@ module.exports = Cancel;
 
 
 /***/ }),
-/* 16 */
+/* 17 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -15794,57 +15839,12 @@ if (GlobalVue) {
 /* WEBPACK VAR INJECTION */}.call(__webpack_exports__, __webpack_require__(1)))
 
 /***/ }),
-/* 17 */
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(18);
+__webpack_require__(5);
 module.exports = __webpack_require__(86);
 
-
-/***/ }),
-/* 18 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "bus", function() { return bus; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__store_index__ = __webpack_require__(44);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_virtual_scroller__ = __webpack_require__(49);
-
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
-
-__webpack_require__(19);
-
-window.Vue = __webpack_require__(7);
-
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
-
-// Vue.component('example-component', require('./components/ExampleComponent.vue'));
-
-
-
-var bus = new Vue();
-window.Vue.use(__WEBPACK_IMPORTED_MODULE_1_vue_virtual_scroller__["a" /* default */]);
-
-Vue.component('searchcomponent', __webpack_require__(50));
-Vue.component('posts', __webpack_require__(56));
-Vue.component('createPost', __webpack_require__(61));
-Vue.component('ips', __webpack_require__(66));
-Vue.component('recyclescroller', __webpack_require__(71));
-Vue.component('vuevirtualtable', __webpack_require__(76));
-
-var app = new Vue({
-  el: '#app',
-  store: __WEBPACK_IMPORTED_MODULE_0__store_index__["a" /* default */]
-});
 
 /***/ }),
 /* 19 */
@@ -15852,7 +15852,7 @@ var app = new Vue({
 
 
 window._ = __webpack_require__(20);
-window.Popper = __webpack_require__(5).default;
+window.Popper = __webpack_require__(6).default;
 
 /**
  * We'll load jQuery and the Bootstrap jQuery plugin which provides support
@@ -15861,7 +15861,7 @@ window.Popper = __webpack_require__(5).default;
  */
 
 try {
-  window.$ = window.jQuery = __webpack_require__(9);
+  window.$ = window.jQuery = __webpack_require__(10);
 
   __webpack_require__(22);
 } catch (e) {}
@@ -33065,7 +33065,7 @@ module.exports = function(module) {
   * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
   */
 (function (global, factory) {
-   true ? factory(exports, __webpack_require__(9), __webpack_require__(5)) :
+   true ? factory(exports, __webpack_require__(10), __webpack_require__(6)) :
   typeof define === 'function' && define.amd ? define(['exports', 'jquery', 'popper.js'], factory) :
   (global = global || self, factory(global.bootstrap = {}, global.jQuery, global.Popper));
 }(this, function (exports, $, Popper) { 'use strict';
@@ -37510,9 +37510,9 @@ module.exports = __webpack_require__(24);
 
 
 var utils = __webpack_require__(0);
-var bind = __webpack_require__(10);
+var bind = __webpack_require__(11);
 var Axios = __webpack_require__(26);
-var defaults = __webpack_require__(6);
+var defaults = __webpack_require__(7);
 
 /**
  * Create an instance of Axios
@@ -37545,9 +37545,9 @@ axios.create = function create(instanceConfig) {
 };
 
 // Expose Cancel & CancelToken
-axios.Cancel = __webpack_require__(15);
+axios.Cancel = __webpack_require__(16);
 axios.CancelToken = __webpack_require__(39);
-axios.isCancel = __webpack_require__(14);
+axios.isCancel = __webpack_require__(15);
 
 // Expose all/spread
 axios.all = function all(promises) {
@@ -37585,7 +37585,7 @@ module.exports = function isBuffer (obj) {
 "use strict";
 
 
-var defaults = __webpack_require__(6);
+var defaults = __webpack_require__(7);
 var utils = __webpack_require__(0);
 var InterceptorManager = __webpack_require__(34);
 var dispatchRequest = __webpack_require__(35);
@@ -37690,7 +37690,7 @@ module.exports = function normalizeHeaderName(headers, normalizedName) {
 "use strict";
 
 
-var createError = __webpack_require__(13);
+var createError = __webpack_require__(14);
 
 /**
  * Resolve or reject a Promise based on response status.
@@ -38080,8 +38080,8 @@ module.exports = InterceptorManager;
 
 var utils = __webpack_require__(0);
 var transformData = __webpack_require__(36);
-var isCancel = __webpack_require__(14);
-var defaults = __webpack_require__(6);
+var isCancel = __webpack_require__(15);
+var defaults = __webpack_require__(7);
 var isAbsoluteURL = __webpack_require__(37);
 var combineURLs = __webpack_require__(38);
 
@@ -38240,7 +38240,7 @@ module.exports = function combineURLs(baseURL, relativeURL) {
 "use strict";
 
 
-var Cancel = __webpack_require__(15);
+var Cancel = __webpack_require__(16);
 
 /**
  * A `CancelToken` is an object that can be used to request cancellation of an operation.
@@ -50538,16 +50538,16 @@ exports.clearImmediate = (typeof self !== "undefined" && self.clearImmediate) ||
     attachTo.clearImmediate = clearImmediate;
 }(typeof self === "undefined" ? typeof global === "undefined" ? this : global : self));
 
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(11)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1), __webpack_require__(12)))
 
 /***/ }),
 /* 44 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vuex__ = __webpack_require__(9);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__actions__ = __webpack_require__(45);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__mutations__ = __webpack_require__(46);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__getters__ = __webpack_require__(47);
@@ -50690,7 +50690,7 @@ var state = {
 /* unused harmony export DynamicScroller */
 /* unused harmony export DynamicScrollerItem */
 /* unused harmony export IdState */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(7);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue__ = __webpack_require__(8);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_vue__);
 
 
@@ -52541,7 +52541,7 @@ exports = module.exports = __webpack_require__(2)(false);
 
 
 // module
-exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
+exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n", ""]);
 
 // exports
 
@@ -52585,7 +52585,10 @@ module.exports = function listToStyles (parentId, list) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_js__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_js__ = __webpack_require__(5);
+//
+//
+//
 //
 //
 //
@@ -52615,8 +52618,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             hostname: '',
             portname: '',
             output: '',
-            response: ''
+            response: '',
+            hasfocus: false
         };
+    },
+    watch: {
+        output: function output(val, oldVal) {
+            __WEBPACK_IMPORTED_MODULE_0__app_js__["bus"].$emit('mega-event', this.output.vueRecordArray);
+        }
     },
     methods: {
         searchGet: function searchGet(event) {
@@ -52632,8 +52641,14 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
             }).catch(function (error) {
                 console.log(error);
             });
-            __WEBPACK_IMPORTED_MODULE_0__app_js__["bus"].$emit('mega-event', this.output.vueRecordArray);
         }
+        // focus (value) {
+        //     this.hasfocus = value;
+        //     if(this.hasfocus === false) {
+        //         this.ipname = null;
+        //         this.hostname = null;
+        //     }
+        // },
     }
 
 });
@@ -52647,7 +52662,7 @@ var render = function() {
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
   return _c("div", { attrs: { id: "searchcomponent" } }, [
-    _c("div", { staticClass: "row" }, [
+    _c("div", { staticClass: "row", staticStyle: { "text-align": "center" } }, [
       _c("div", { staticClass: "col-3" }, [
         _c("input", {
           directives: [
@@ -52666,6 +52681,15 @@ var render = function() {
           },
           domProps: { value: _vm.ipname },
           on: {
+            keyup: function($event) {
+              if (
+                !$event.type.indexOf("key") &&
+                _vm._k($event.keyCode, "enter", 13, $event.key, "Enter")
+              ) {
+                return null
+              }
+              return _vm.searchGet($event)
+            },
             input: function($event) {
               if ($event.target.composing) {
                 return
@@ -52694,6 +52718,15 @@ var render = function() {
           },
           domProps: { value: _vm.hostname },
           on: {
+            keyup: function($event) {
+              if (
+                !$event.type.indexOf("key") &&
+                _vm._k($event.keyCode, "enter", 13, $event.key, "Enter")
+              ) {
+                return null
+              }
+              return _vm.searchGet($event)
+            },
             input: function($event) {
               if ($event.target.composing) {
                 return
@@ -52732,7 +52765,7 @@ var render = function() {
         })
       ]),
       _vm._v(" "),
-      _c("div", { staticClass: "col-3" }, [
+      _c("div", { staticClass: "col-1" }, [
         _c("button", { on: { click: _vm.searchGet } }, [_vm._v("Поиск")])
       ])
     ])
@@ -52845,7 +52878,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(9);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 //
@@ -53303,7 +53336,7 @@ exports.push([module.i, "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(8);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vuex__ = __webpack_require__(9);
 var _extends = Object.assign || function (target) { for (var i = 1; i < arguments.length; i++) { var source = arguments[i]; for (var key in source) { if (Object.prototype.hasOwnProperty.call(source, key)) { target[key] = source[key]; } } } return target; };
 
 //
@@ -53793,7 +53826,7 @@ module.exports = Component.exports
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_js__ = __webpack_require__(18);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__app_js__ = __webpack_require__(5);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_virtual_table__ = __webpack_require__(78);
 //
 //
@@ -53826,9 +53859,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
-//
-//
-//
+
 
 
 
@@ -53848,7 +53879,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
                 sortable: true,
                 summary: 'COUNT',
                 width: 130
-            }, { prop: '_action', name: 'HOST', actionName: 'hosts', width: 120 }, { prop: '_action', name: 'PORT', actionName: 'ports', width: 200 },
+            }, { prop: '_action', name: 'HOST', actionName: 'hosts', width: 180 }, { prop: '_action', name: 'PORT', actionName: 'ports', width: 200 },
             // { prop: 'host', name: 'HOST', searchable: true },
             // { prop: 'port', name: 'PORT', filterable: true },
             { prop: '_action', name: 'Action', actionName: 'actionCommon' }],
@@ -53867,14 +53898,6 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
     },
 
     mounted: function mounted() {
-        // let arr = [];
-        //
-        // this.records.forEach((value, index) => {
-        //     arr.push(value);
-        //     console.log(value.host);
-        // });
-    },
-    created: function created() {
         var _this = this;
 
         __WEBPACK_IMPORTED_MODULE_0__app_js__["bus"].$on('mega-event', function (data) {
@@ -53899,7 +53922,7 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_resize__ = __webpack_require__(16);
+/* WEBPACK VAR INJECTION */(function(global) {/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_vue_resize__ = __webpack_require__(17);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_observe_visibility__ = __webpack_require__(79);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_resize_dist_vue_resize_css__ = __webpack_require__(80);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_vue_resize_dist_vue_resize_css___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_vue_resize_dist_vue_resize_css__);
@@ -54730,8 +54753,8 @@ module.exports = function (css) {
 /* unused harmony export createTooltip */
 /* unused harmony export destroyTooltip */
 /* unused harmony export install */
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_popper_js__ = __webpack_require__(5);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_resize__ = __webpack_require__(16);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_popper_js__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_vue_resize__ = __webpack_require__(17);
 
 
 
@@ -59186,7 +59209,7 @@ var render = function() {
         key: "ports",
         fn: function(scope) {
           return _vm._l(scope.row.port, function(port) {
-            return _c("div", [_c("div", [_vm._v(_vm._s(port) + ", ")])])
+            return _c("div", [_c("div", [_vm._v(_vm._s(port) + ",")])])
           })
         }
       }

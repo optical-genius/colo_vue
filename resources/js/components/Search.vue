@@ -1,16 +1,19 @@
 <template>
     <div id="searchcomponent">
-        <div class="row">
+        <div class="row" style="text-align: center">
             <div class="col-3">
-                <input type="text" v-model="ipname" name="ip_name" id="ip_name" placeholder="IP addr">
+                <!--                @focusin="focus(true)" @focusout="focus(false)"-->
+                <input type="text" v-on:keyup.enter="searchGet" v-model="ipname" name="ip_name" id="ip_name"
+                       placeholder="IP addr">
             </div>
             <div class="col-3">
-                <input type="text" v-model="hostname" name="host_name" id="host_name" placeholder="Host">
+                <input type="text" v-on:keyup.enter="searchGet" v-model="hostname" name="host_name" id="host_name"
+                       placeholder="Host">
             </div>
             <div class="col-3">
                 <input type="text" v-model="portname" name="port_name" id="port_name" placeholder="Port">
             </div>
-            <div class="col-3">
+            <div class="col-1">
                 <button v-on:click="searchGet">Поиск</button>
             </div>
         </div>
@@ -18,21 +21,26 @@
 </template>
 
 <script>
-    import { bus } from '../app.js';
+    import {bus} from '../app.js';
     export default {
         name: 'searchcomponent',
-        data: function() {
+        data: function () {
             return {
                 ipname: '',
                 hostname: '',
                 portname: '',
                 output: '',
-                response: ''
+                response: '',
+                hasfocus: false,
             };
         },
+        watch: {
+            output: function (val, oldVal) {
+                bus.$emit('mega-event', this.output.vueRecordArray);
+            },
+        },
         methods: {
-            searchGet: function(event) {
-
+            searchGet: function (event) {
                 let params = {}
                 params['ip_name'] = this.ipname;
                 params['host_name'] = this.hostname;
@@ -44,10 +52,16 @@
                     .catch(function (error) {
                         console.log(error);
                     });
-                bus.$emit('mega-event', this.output.vueRecordArray);
 
 
-             }
+            },
+            // focus (value) {
+            //     this.hasfocus = value;
+            //     if(this.hasfocus === false) {
+            //         this.ipname = null;
+            //         this.hostname = null;
+            //     }
+            // },
         }
 
     }
