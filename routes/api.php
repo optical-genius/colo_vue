@@ -17,16 +17,29 @@ Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
 
-
+/*
+ * Route for POSTS
+ */
 Route::post('posts', 'PostController@store');
 
 Route::get('posts', 'PostController@get');
 
 Route::delete('posts/{id}', 'PostController@delete');
 
-//Route::get('ips', 'IpController@get');
-
 Route::delete('ips/{id}', 'IpController@delete');
 
+//Search route
+Route::get('search', 'IpController@search');
 
-Route::get('tests', 'IpController@virtual');
+
+/*
+ * Route for PORTS
+ */
+
+
+
+/*
+ * Route for HOSTS
+ */
+
+Route::delete('hosts/{id}', 'HostController@delete');

@@ -15,13 +15,11 @@ window.Vue = require('vue');
  * or customize the JavaScript scaffolding to fit your unique needs.
  */
 
-// Vue.component('example-component', require('./components/ExampleComponent.vue'));
 import store from './store/index';
 import recyclescroller from 'vue-virtual-scroller';
 
 export const bus = new Vue()
 window.Vue.use(recyclescroller);
-
 
 Vue.component('searchcomponent', require('./components/Search.vue'))
 Vue.component('posts', require('./components/Posts.vue'))
@@ -29,7 +27,6 @@ Vue.component('createPost', require('./components/CreatePost.vue'))
 Vue.component('ips', require('./components/ip/Ip.vue'))
 Vue.component('recyclescroller', require('./components/Clusterize.vue'))
 Vue.component('vuevirtualtable', require('./components/VirtualTable.vue'))
-
 
 const app = new Vue({
     el: '#app',

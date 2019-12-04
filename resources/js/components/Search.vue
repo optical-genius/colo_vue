@@ -47,7 +47,7 @@
                 params['port_name'] = this.portname;
 
                 axios
-                    .get('/api/tests', {params: params})
+                    .get('/api/search', {params: params})
                     .then(response => (this.output = response.data))
                     .catch(function (error) {
                         console.log(error);
