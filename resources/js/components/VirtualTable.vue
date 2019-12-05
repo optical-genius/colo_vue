@@ -18,8 +18,8 @@
             </template>
 
             <template slot-scope="scope" slot="hosts">
-                <div v-for="host in scope.row.host" style="display: block; float: left; width: 100%;" v-on:click.right="show(scope.index, scope.row)" @contextmenu.prevent>
-                    <div>{{host}}</div>
+                <div v-for="(host, index) in scope.row.host" style="display: block; float: left; width: 100%;" v-on:click.right="show(scope.index, scope.row)" @contextmenu.prevent>
+                    <div :id="index" v-bind:key="index">{{host}}</div>
                 </div>
             </template>
 
@@ -29,6 +29,8 @@
                 </div>
             </template>
         </vue-virtual-table>
+
+        <!-- MODAL COMPONENT -->
 
         <modal :draggable="true" :resizable="true" :width="1200" :height="800" v-bind:popupdata="popupdata" name="colobog-popup">
 
@@ -117,6 +119,7 @@
             return {
                 //Переменная для попап окна
                 popupdata: '',
+                scopeindex: '',
 
                 //Конфиг компонента vuevirtualtable
                 tableConfig: [
@@ -173,13 +176,19 @@
                     .catch(function (error) {
                         console.log(error);
                     });
-                //this.tableData.delete(index);
-                console.log(index);
+
+                //Удаляем хост из попапа
+                this.$delete(this.popupdata.host, index);
+
+                //Удаляем хост из глобальной таблицы
+                this.$delete(this.tableData[this.scopeindex.toString()].host, index);
+
             },
             show (index, row) {
                 this.popupdata = row;
                 this.$modal.show('colobog-popup', {popupdata: 'popupdata'}, { draggable: true });
-                console.log(row);
+                this.scopeindex = index;
+                console.log(index);
             },
             hide () {
                 this.$modal.hide('colobog-popup');

@@ -53925,6 +53925,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
 
 
 //Создаем шину для передачи данных между компонентами search и virtualtable
@@ -53948,6 +53950,7 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_2_vue_js_modal___default.a);
         return {
             //Переменная для попап окна
             popupdata: '',
+            scopeindex: '',
 
             //Конфиг компонента vuevirtualtable
             tableConfig: [{ prop: '_index', name: '#', width: 80 }, {
@@ -54001,13 +54004,18 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_2_vue_js_modal___default.a);
             }).catch(function (error) {
                 console.log(error);
             });
-            //this.tableData.delete(index);
-            console.log(index);
+
+            //Удаляем хост из попапа
+            this.$delete(this.popupdata.host, index);
+
+            //Удаляем хост из глобальной таблицы
+            this.$delete(this.tableData[this.scopeindex.toString()].host, index);
         },
         show: function show(index, row) {
             this.popupdata = row;
             this.$modal.show('colobog-popup', { popupdata: 'popupdata' }, { draggable: true });
-            console.log(row);
+            this.scopeindex = index;
+            console.log(index);
         },
         hide: function hide() {
             this.$modal.hide('colobog-popup');
@@ -59301,7 +59309,7 @@ var render = function() {
           {
             key: "hosts",
             fn: function(scope) {
-              return _vm._l(scope.row.host, function(host) {
+              return _vm._l(scope.row.host, function(host, index) {
                 return _c(
                   "div",
                   {
@@ -59321,7 +59329,11 @@ var render = function() {
                       ]
                     }
                   },
-                  [_c("div", [_vm._v(_vm._s(host))])]
+                  [
+                    _c("div", { key: index, attrs: { id: index } }, [
+                      _vm._v(_vm._s(host))
+                    ])
+                  ]
                 )
               })
             }
