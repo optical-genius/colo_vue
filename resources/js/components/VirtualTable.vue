@@ -14,7 +14,7 @@
 
             <template slot-scope="scope" slot="actionCommon">
                 <button @click="show(scope.index, scope.row)">Edit</button>
-                <button @click="del(scope.index, scope.row)">Delete</button>
+                <button @click="ipDelete(scope.index, scope.row)">Delete</button>
             </template>
 
             <template slot-scope="scope" slot="hosts">
@@ -32,7 +32,7 @@
 
         <!-- MODAL COMPONENT -->
 
-        <modal :draggable="true" :resizable="true" :width="1200" :height="800" v-bind:popupdata="popupdata" name="colobog-popup">
+        <modal :draggable="true" :resizable="true" :width="1200" :height="600" v-bind:popupdata="popupdata" name="colobog-popup">
 
             <div class="row" style="margin: 40px">
                 <div>
@@ -163,8 +163,16 @@
             edit(index, row) {
                 console.log(row)
             },
-            del(index, row) {
-                console.log(index)
+            ipDelete(index, row) {
+                this.$delete(this.tableData, index);
+
+                axios
+                    .delete(`/api/ips/${this.tableData[index.toString()].id}`)
+                    .then(response => (console.log(response.data)))
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+
             },
             hostDelete(index){
                 let params = {}

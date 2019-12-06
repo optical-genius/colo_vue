@@ -53992,8 +53992,14 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_2_vue_js_modal___default.a);
         edit: function edit(index, row) {
             console.log(row);
         },
-        del: function del(index, row) {
-            console.log(index);
+        ipDelete: function ipDelete(index, row) {
+            this.$delete(this.tableData, index);
+
+            axios.delete('/api/ips/' + this.tableData[index.toString()].id).then(function (response) {
+                return console.log(response.data);
+            }).catch(function (error) {
+                console.log(error);
+            });
         },
         hostDelete: function hostDelete(index) {
             var params = {};
@@ -59297,7 +59303,7 @@ var render = function() {
                   {
                     on: {
                       click: function($event) {
-                        return _vm.del(scope.index, scope.row)
+                        return _vm.ipDelete(scope.index, scope.row)
                       }
                     }
                   },
@@ -59371,7 +59377,7 @@ var render = function() {
             draggable: true,
             resizable: true,
             width: 1200,
-            height: 800,
+            height: 600,
             popupdata: _vm.popupdata,
             name: "colobog-popup"
           }
