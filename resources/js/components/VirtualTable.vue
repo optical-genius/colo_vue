@@ -30,9 +30,10 @@
             </template>
         </vue-virtual-table>
 
-        <!-- MODAL COMPONENT -->
 
-        <modal :draggable="true" :resizable="true" :width="1200" :height="600" v-bind:popupdata="popupdata" name="colobog-popup">
+        <!-- MODAL COMPONENT EDIT IP ROW -->
+
+        <modal :draggable="true" :resizable="true" :width="1200" :height="800" v-bind:popupdata="popupdata" name="colobog-popup">
 
             <div class="row" style="margin: 40px">
                 <div>
@@ -72,7 +73,7 @@
             <div class="row" style="margin: 40px">
                 <div v-for="(port, index) in popupdata.port">
                     <div class="col">
-                       ID: {{index}} | Изменить {{port}} | <a href="">x</a>
+                       ID: {{index}} | Изменить {{port}} | <a href="" @click.prevent="portDelete(index)">x</a>
                     </div>
                 </div>
             </div>
@@ -90,6 +91,33 @@
             </div>
 
         </modal>
+
+
+        <!-- MODAL COMPONENT ADD IP ROW -->
+
+        <modal :draggable="true" :resizable="true" :width="400" :height="200" name="ip-add-popup">
+
+            <div class="row" style="margin: 40px">
+                <div>
+                    <div class="col">
+                        Добавить IP
+                    </div>
+                    <div class="col">
+                        <input type="text" class="form-control" :value="ipAddData">
+                        <button>Добавить</button>
+                    </div>
+
+                </div>
+            </div>
+
+        </modal>
+
+
+        <div class="row">
+            <div class="col-3">
+                <button @click="addIp()">Добавить IP</button>
+            </div>
+        </div>
 
     </div>
 </template>
@@ -120,6 +148,10 @@
                 //Переменная для попап окна
                 popupdata: '',
                 scopeindex: '',
+
+                //Переменная для добавления IP
+                ipAddData: '',
+
 
                 //Конфиг компонента vuevirtualtable
                 tableConfig: [
@@ -191,6 +223,27 @@
                 //Удаляем хост из глобальной таблицы
                 this.$delete(this.tableData[this.scopeindex.toString()].host, index);
 
+            },
+            portDelete(index){
+                let params = {}
+                params['index'] = index;
+
+                axios
+                    .delete(`/api/ports/${index}`)
+                    .then(response => (console.log(response.data)))
+                    .catch(function (error) {
+                        console.log(error);
+                    });
+
+                //Удаляем хост из попапа
+                this.$delete(this.popupdata.port, index);
+
+                //Удаляем хост из глобальной таблицы
+                this.$delete(this.tableData[this.scopeindex.toString()].port, index);
+
+            },
+            addIp () {
+                this.$modal.show('ip-add-popup', { draggable: true });
             },
             show (index, row) {
                 this.popupdata = row;

@@ -53927,6 +53927,34 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 //Создаем шину для передачи данных между компонентами search и virtualtable
@@ -53951,6 +53979,9 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_2_vue_js_modal___default.a);
             //Переменная для попап окна
             popupdata: '',
             scopeindex: '',
+
+            //Переменная для добавления IP
+            ipAddData: '',
 
             //Конфиг компонента vuevirtualtable
             tableConfig: [{ prop: '_index', name: '#', width: 80 }, {
@@ -54016,6 +54047,25 @@ Vue.use(__WEBPACK_IMPORTED_MODULE_2_vue_js_modal___default.a);
 
             //Удаляем хост из глобальной таблицы
             this.$delete(this.tableData[this.scopeindex.toString()].host, index);
+        },
+        portDelete: function portDelete(index) {
+            var params = {};
+            params['index'] = index;
+
+            axios.delete('/api/ports/' + index).then(function (response) {
+                return console.log(response.data);
+            }).catch(function (error) {
+                console.log(error);
+            });
+
+            //Удаляем хост из попапа
+            this.$delete(this.popupdata.port, index);
+
+            //Удаляем хост из глобальной таблицы
+            this.$delete(this.tableData[this.scopeindex.toString()].port, index);
+        },
+        addIp: function addIp() {
+            this.$modal.show('ip-add-popup', { draggable: true });
         },
         show: function show(index, row) {
             this.popupdata = row;
@@ -59377,7 +59427,7 @@ var render = function() {
             draggable: true,
             resizable: true,
             width: 1200,
-            height: 600,
+            height: 800,
             popupdata: _vm.popupdata,
             name: "colobog-popup"
           }
@@ -59480,7 +59530,19 @@ var render = function() {
                       _vm._s(port) +
                       " | "
                   ),
-                  _c("a", { attrs: { href: "" } }, [_vm._v("x")])
+                  _c(
+                    "a",
+                    {
+                      attrs: { href: "" },
+                      on: {
+                        click: function($event) {
+                          $event.preventDefault()
+                          return _vm.portDelete(index)
+                        }
+                      }
+                    },
+                    [_vm._v("x")]
+                  )
                 ])
               ])
             }),
@@ -59508,7 +59570,55 @@ var render = function() {
             ])
           ])
         ]
-      )
+      ),
+      _vm._v(" "),
+      _c(
+        "modal",
+        {
+          attrs: {
+            draggable: true,
+            resizable: true,
+            width: 400,
+            height: 200,
+            name: "ip-add-popup"
+          }
+        },
+        [
+          _c("div", { staticClass: "row", staticStyle: { margin: "40px" } }, [
+            _c("div", [
+              _c("div", { staticClass: "col" }, [
+                _vm._v("\n                    Добавить IP\n                ")
+              ]),
+              _vm._v(" "),
+              _c("div", { staticClass: "col" }, [
+                _c("input", {
+                  staticClass: "form-control",
+                  attrs: { type: "text" },
+                  domProps: { value: _vm.ipAddData }
+                }),
+                _vm._v(" "),
+                _c("button", [_vm._v("Добавить")])
+              ])
+            ])
+          ])
+        ]
+      ),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-3" }, [
+          _c(
+            "button",
+            {
+              on: {
+                click: function($event) {
+                  return _vm.addIp()
+                }
+              }
+            },
+            [_vm._v("Добавить IP")]
+          )
+        ])
+      ])
     ],
     1
   )

@@ -257,7 +257,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="true" />
-    <property name="last_opened_file_path" value="Y:/resources/js/components" />
+    <property name="last_opened_file_path" value="Y:/" />
     <property name="nodejs_package_manager_path" value="yarn" />
   </component>
   <component name="RecentsManager">
@@ -302,7 +302,8 @@
       <workItem from="1574692007627" duration="80534000" />
       <workItem from="1575360521104" duration="48246000" />
       <workItem from="1575618569490" duration="615000" />
-      <workItem from="1575620103957" duration="1812000" />
+      <workItem from="1575620103957" duration="11483000" />
+      <workItem from="1575882912182" duration="1228000" />
     </task>
     <servers />
   </component>

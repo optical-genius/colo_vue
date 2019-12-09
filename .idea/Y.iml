@@ -5,6 +5,7 @@
       <sourceFolder url="file://Y:/tests" isTestSource="true" packagePrefix="Tests\" />
       <sourceFolder url="file://Y:/app" isTestSource="false" packagePrefix="App\" />
       <excludeFolder url="file://Y:/node_modules" />
+      <excludeFolder url="file://Y:/vendor" />
       <excludeFolder url="file://Y:/vendor/barryvdh/laravel-debugbar" />
       <excludeFolder url="file://Y:/vendor/clue/stream-filter" />
       <excludeFolder url="file://Y:/vendor/composer" />

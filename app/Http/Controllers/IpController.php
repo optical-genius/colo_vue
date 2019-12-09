@@ -7,6 +7,12 @@ use Neo4jClient;
 
 class IpController extends Controller
 {
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     *
+     */
+
     public function index()
     {
         return view('ips');
@@ -30,11 +36,28 @@ class IpController extends Controller
         return response()->json(['vueRecordArray' => $vueRecordArray, 'start' => $start, 'memorylim' => $memorylim]);
     }
 
+
+    /**
+     * @param $id
+     * @return \Illuminate\Http\JsonResponse
+     * Удаляем IP, все хосты связанные с адресом и связи с портами.
+     */
     public function delete($id)
     {
 //        $test = Neo4jClient::run('MATCH (n:Ip)-[r]-(h:Host) WHERE ID(n) = './* $id */.' DELETE n, r, h');
         return response()->json($id);
     }
+
+
+    /**
+     * @param Request $request
+     * @return \Illuminate\Http\JsonResponse
+     */
+    public function put(Request $request)
+    {
+        return response()->json($request);
+    }
+
 
     public function clusterize()
     {
@@ -61,11 +84,21 @@ class IpController extends Controller
         return view('ips-clusterize', compact('vueRecordArray', 'start', 'memorylim'));
     }
 
+
+    /**
+     * @return \Illuminate\Contracts\View\Factory|\Illuminate\View\View
+     * Отрисовываем динамическую таблицу в компоненте VirtualTable.vue
+     * Кол-во записей устанавливается в запросе "LIMIT 100"
+     * $start Замер времени выполнения скрипта
+     * $cypherQuery->getRecords() Возвращает объект с protected properties. Пробегаем циклом и достаем защищенные свойства в массив
+     * $memorylim затраты памяти
+     */
+
     public function clusterizeTable()
     {
         ini_set('memory_limit', '1024M');
         $start = microtime(true);
-        $test = Neo4jClient::run('
+        $cypherQuery = Neo4jClient::run('
                                 MATCH (ip:Ip) 
                                 WITH ip, 
                                 [(ip)-->(port:Port) | port{id: ID(port), port_name: port.port_name}] as ports, 
@@ -74,11 +107,10 @@ class IpController extends Controller
                                 RETURN { id: ID(ip), ip_name: ip.ip_name }, ports, hosts
                                 ');
 
-        $records = $test->getRecords();
+        $records = $cypherQuery->getRecords();
 
         $vueRecordArray = [];
         foreach ($records as $vue) {
-
             $ip = [];
             $ip['id'] = $vue->values()['0']['id'];
             $ip['ip_name'] = $vue->values()['0']['ip_name'];
@@ -106,12 +138,22 @@ class IpController extends Controller
     }
 
 
+    /**
+     * @param Request $request
+     * @return array
+     * Поиск для компонента Search.vue
+     * Результат рендерится в компоненте VirtualTable.vue
+     * $start Замер времени выполнения скрипта
+     * $cypherQuery->getRecords() Возвращает объект с protected properties. Пробегаем циклом и достаем защищенные свойства в массив
+     * $memorylim затраты памяти
+     */
+
     public function search(Request $request){
 
         if($request['ip_name']){
             ini_set('memory_limit', '1024M');
             $start = microtime(true);
-            $test = Neo4jClient::run('
+            $cypherQuery = Neo4jClient::run('
                                 MATCH (ip:Ip)
                                 WHERE ip.ip_name STARTS WITH "' . $request["ip_name"] . '"
                                 WITH ip, 
@@ -121,7 +163,7 @@ class IpController extends Controller
                                 RETURN { id: ID(ip), ip_name: ip.ip_name }, ports, hosts
                                 ');
 
-            $records = $test->getRecords();
+            $records = $cypherQuery->getRecords();
 
             $vueRecordArray = [];
             foreach ($records as $vue) {
@@ -156,7 +198,7 @@ class IpController extends Controller
 //ПЕРЕДЕЛАТЬ ЗАПРОС
             ini_set('memory_limit', '1024M');
             $start = microtime(true);
-            $test = Neo4jClient::run('
+            $cypherQuery = Neo4jClient::run('
                 MATCH (host:Host) 
                 WHERE host.host_name STARTS WITH "' . $request["host_name"] . '"
                 WITH host as hosts, 
@@ -164,7 +206,7 @@ class IpController extends Controller
                 [(host)--()--(port:Port) | port] as ports LIMIT 1000
                 RETURN ip, ports, hosts
             ');
-            $records = $test->getRecords();
+            $records = $cypherQuery->getRecords();
 
 
             $vueRecordArray = [];

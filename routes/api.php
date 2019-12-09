@@ -26,19 +26,26 @@ Route::get('posts', 'PostController@get');
 
 Route::delete('posts/{id}', 'PostController@delete');
 
-Route::delete('ips/{id}', 'IpController@delete');
 
-//Search route
+/**
+ * Search route
+ */
 Route::get('search', 'IpController@search');
 
+/**
+ * Route for IP
+ */
 
-/*
+Route::delete('ips/{id}', 'IpController@delete');
+Route::put('ips/', 'IpController@put');
+
+/**
  * Route for PORTS
  */
 
+Route::delete('ports/{id}', 'PortController@delete');
 
-
-/*
+/**
  * Route for HOSTS
  */
 
